@@ -8,49 +8,19 @@
 
 
 
-    <div id="btn-menu">
-        <a href="#" class="findMe toggle " id="menu-toggle">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
-
-    <div class="row active" id="mynav">
-
-        <div id="btn-close">
-            <a href="#" class="findMe toggle" id="menu-close">
-                <i class="fa fa-times"></i>
-            </a>
-        </div>
-        <div class="navbar-inner">
-            <a class="brand" href="#" id="menu-title"><h4>Start Bootstrap</h4></a>
-
-            <br />
-            <ul class="nav">
-                <li class="active"><a href="#">Home1</a></li>
-                <li><a href="#">New Menu</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Addredd</a></li>
-
-            </ul>
-
-
-        </div>
-    </div>
+   @Html.Partial("Menu")
     <div class="container-fluid">
         <div class="row">
             <div id="img" class="col-sm-12">
                 <div class=" header">
                     <div>
-                        <h1><b>تیم مهندسان</b></h1>
+                        <p id="mainTitle"><b>تیم مهندسان</b></p>
                     </div>
                     <div>
-                        <h3>نمونه کارهای پلان، ماکت، اتوکد، نقشه دوربین های مداربسته</h3>
+                        <p id="subTitle">نمونه کارهای پلان ساختمان، ماکت، طراحی وبسایت،  کارگذاری دوربین های مداربسته</p>
                     </div>
                     <div>
-                        <a href="#" class="findMe">درباره ما بیشتر بدانید</a>
+                        <a href="#" class="btn btn-primary buttons-ourServices">درباره ما بیشتر بدانید</a>
                     </div>
                 </div>
 

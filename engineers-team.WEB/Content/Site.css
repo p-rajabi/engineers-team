@@ -9,6 +9,15 @@
   
 }
 
+#mainTitle{
+    font-size:60px;
+}
+
+#subTitle{
+    font-size:50px;
+  
+}
+
 #img{
   background-image:url(../img/bg-JozaniNet.jpg);
   background-size:cover;
