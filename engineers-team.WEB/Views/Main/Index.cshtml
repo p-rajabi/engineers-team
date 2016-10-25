@@ -2,10 +2,140 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
 
-@Html.Partial("about")
 
-<section id="services"></section>
-<section id="contact"></section>
-<section id="footer"></section>
+
+
+
+
+    <div id="btn-menu">
+        <a href="#" class="findMe toggle " id="menu-toggle">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="row active" id="mynav">
+
+        <div id="btn-close">
+            <a href="#" class="findMe toggle" id="menu-close">
+                <i class="fa fa-times"></i>
+            </a>
+        </div>
+        <div class="navbar-inner">
+            <a class="brand" href="#" id="menu-title"><h4>Start Bootstrap</h4></a>
+
+            <br />
+            <ul class="nav">
+                <li class="active"><a href="#">Home1</a></li>
+                <li><a href="#">New Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Addredd</a></li>
+
+            </ul>
+
+
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="img" class="col-sm-12">
+                <div class=" header">
+                    <div>
+                        <h1><b>تیم مهندسان</b></h1>
+                    </div>
+                    <div>
+                        <h3>نمونه کارهای پلان، ماکت، اتوکد، نقشه دوربین های مداربسته</h3>
+                    </div>
+                    <div>
+                        <a href="#" class="findMe">درباره ما بیشتر بدانید</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="description" class="row">
+            <div class="col-sm-12">
+                <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
+
+                <h4>This theme features some wonderful courtesy of Death to the Stock Photo.</h4>
+            </div>
+        </div>
+
+@Html.Partial("OurServices")
+
+        <div class="row" style="height:400px" id="img-abstract">
+            <h1><strong>Vertically Centered Text</strong></h1>
+
+        </div>
+
+        @Html.Partial("OurWork")
+
+        <div class="row" id="second-blue">
+            <div class="col-sm-12">
+                <h3>The buttons below are impossible to resist.</h3>
+            </div>
+            <div id="space" class="col-sm-12">
+                <a href="#" id="btn-clickMe">Click Me!</a>
+                <a href="#" id="btn-lookAtMe">Look at Me!</a>
+            </div>
+        </div>
+        <div class="row">
+            <div id="map">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12480.024463005955!2d-121.43451049999999!3d38.556672899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ada9b477715cf%3A0x2ba00da74d6f5938!2s5770+T+St%2C+Sacramento%2C+CA+95817!5e0!3m2!1sen!2sus!4v1470274261546"
+                        frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12" id="footer">
+                <h4><strong>Start Bootstrap</strong></h4>
+                <address>3481 Melrose Place <br /> Beverly Hills, CA 90210</address>
+
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
+                    <li><i class="fa fa-envelope-o fa-fw"></i><a href="mailto:name@example.com">name@example.com</a></li>
+                </ul>
+
+                <br />
+
+                <ul class="list-inline">
+                    <li><a href="#"><i class="fa fa-facebook fa-fw-3x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter fa-fw-3x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble fa-fw-3x"></i></a></li>
+                </ul>
+                <hr id="small-hr" />
+                <p class="text-muted">copyright Your Website 2014</p>
+
+            </div>
+        </div>
+
+    </div>
+
+   
+    <script>
+        $(document).ready(function () {
+         
+            $("#btn-menu").click(function (event) {
+                event.preventDefault();
+                $("#mynav").removeClass("sidebar-hide");
+                $("#mynav").addClass("sidebar-show");
+
+            });
+
+            $("#btn-close").click(function () {
+                event.preventDefault();
+                $("#mynav").removeClass("sidebar-show");
+                $("#mynav").addClass("sidebar-hide");
+            });
+
+
+        });
+
+    </script>
+
+
+
