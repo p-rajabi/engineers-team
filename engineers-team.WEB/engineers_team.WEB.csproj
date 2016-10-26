@@ -212,6 +212,8 @@
     <Content Include="img\bg-JozaniNet.jpg" />
     <Content Include="img\bg-overlay.png" />
     <Content Include="img\bg.jpg" />
+    <Content Include="img\Camera\camera-1.jpg" />
+    <Content Include="img\Camera\website.jpg" />
     <Content Include="img\logo.png" />
     <Content Include="img\mainpage.jpg" />
     <Content Include="img\makets\maket-1.jpg" />

@@ -1,11 +1,12 @@
 ﻿
 .header{
   
-  padding-top:350px;
+  padding-top:300px;
   text-align:center;
   width:100%;  
   font-size:36px;
   color:white;
+  
   
 }
 
@@ -24,6 +25,7 @@
   position:relative;
   height:100vh;
   background-attachment:fixed;
+  
 }
 .findMe  {
     color:white;
@@ -175,6 +177,15 @@
     right:0;
     
 }
+
+#btnClose{
+    padding-top:20px;
+    padding-left:20px;
+}
+.toRight{
+    text-align:right;
+    text-decoration:none;
+}
 .toggle {
     margin:5px 5px 0 0;
 }
@@ -197,19 +208,26 @@
  }
 
     #mynav ul > li > a {
-        color:#7D8183;
+        color:white;
+    padding-right:20px;
+    font-size:20px;
+
     }
     #mynav ul > li > a:hover {
         color:white;
         background-color:grey;
+    
+
     }
 #menu-title {
     text-decoration:none;
-    color:#7D8183;
+    color:white;
+    margin-right:23px !important;
     
 }
     #menu-title:hover {
-        color:white;
+        color:#7D8183;
+       
     }
 .sidebar-show {
     z-index: 1000;
@@ -229,3 +247,11 @@
      transition: transform 1s;
 }
 
+
+.navbar-inner ul li a{
+    color:#e6e6e6;
+
+}
+.navbar-inner a:hover{
+    text-decoration:none;
+}
