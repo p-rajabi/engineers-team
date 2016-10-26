@@ -13,16 +13,16 @@
 
     
     <div class="navbar-inner">
-        <a class="brand toRight" href="#"><h1 id="menu-title">تیم مهندسان</h1></a>
+        <a class="brand toRight" href="/"><h1 id="menu-title">تیم مهندسان</h1></a>
 
         <br />
         <ul class="nav toRight">
-            <li class="active"><a href="#">خدمات ما</a></li>
-            <li><a href="#">نمومه کارها</a></li>
-            <li><a href="#">اعضای تیم مهندسان</a></li>
-            <li><a href="#">گالری</a></li>
-            <li><a href="#">ارتباط با ما</a></li>
-            <li><a href="#">آدرس</a></li>
+            <li class="active links" data-name="ourServices"><a href="#">خدمات ما</a></li>
+            <li><a class="links" href="#">نمومه کارها</a></li>
+            <li><a class="links" href="@Url.Action("Team","Main")">اعضای تیم مهندسان</a></li>            
+            <li><a class="links" href="@Url.Action("AnyOtherPage","Main")">گالری</a></li>
+            <li><a class="links" href="#">ارتباط با ما</a></li>
+            <li><a class="links" href="#">آدرس</a></li>
 
 
         </ul>
@@ -30,3 +30,6 @@
 
     </div>
 </div>
+
+
+

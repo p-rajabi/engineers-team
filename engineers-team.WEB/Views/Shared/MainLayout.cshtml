@@ -21,14 +21,36 @@
 
 </head>
 <body>
-
-   @RenderBody()
-    
+    @Html.Partial("Menu")
+    <div class="container-fluid" id="main-container" style="z-index:1">
+        @RenderBody()
+    </div>
     @RenderSection("scripts", required: false)  
-    @RenderSection("pooneh", required: false)
+    
+    <script>
+        $(document).ready(function () {
+            // click off the menu to close it
+            $('#main-container').click(function () {
+                $("#mynav").removeClass("sidebar-show").addClass("sidebar-hide");
+                $("#btn-open").fadeIn('slow');
+            });
 
+            // click on open menu to open it
+            $("#btn-open").click(function (event) {
+                event.preventDefault();
+                $("#mynav").removeClass("sidebar-hide").addClass("sidebar-show");
+                $("#btn-open").fadeOut('slow');
+            });
 
-
+        //    $(".links").click(function (e) {
+        //        e.preventDefault();
+        //        var type = $(this).data("name");
+        //        $('body').animate({
+        //            scrollTop: $("#" + type).offset().top
+        //    },1000);
+        //}); 
+    })
+    </script>
 
     <script src="~/Scripts/google.js"></script>
 </body>

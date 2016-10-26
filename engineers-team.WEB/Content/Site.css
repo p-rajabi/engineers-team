@@ -1,48 +1,56 @@
 ﻿
-.header{
-  
-  padding-top:300px;
-  text-align:center;
-  width:100%;  
-  font-size:36px;
-  color:white;
-  
-  
+/*#region Header */
+
+
+.header {
+    padding-top: 300px;
+    text-align: center;
+    width: 100%;
+    font-size: 36px;
+    color: white;
 }
 
-#mainTitle{
-    font-size:60px;
+#mainTitle {
+    font-size: 60px;
 }
 
-#subTitle{
-    font-size:50px;
-  
+#subTitle {
+    font-size: 50px;
 }
 
-#img{
-  background-image:url(../img/bg-JozaniNet.jpg);
-  background-size:cover;
-  position:relative;
-  height:100vh;
-  background-attachment:fixed;
-  
+#img {
+    background-image: url(../img/bg-JozaniNet.jpg);
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    background-attachment: fixed;
 }
-.findMe  {
-    color:white;
-    font-size:16px;
-    background-color:#999999;
-    padding:15px 15px 15px 15px;
+
+.findMe {
+    color: white;
+    font-size: 16px;
+    background-color: #999999;
+    padding: 15px 15px 15px 15px;
 }
+
     .findMe:hover {
-        text-decoration:none;
-        background-color:#333333;
-        color:white;
-            }
+        text-decoration: none;
+        background-color: #333333;
+        color: white;
+    }
+
+/*#endregion */
+
+/*#region Second section */
+
 #description {
-    padding-top:50px;
-    padding-bottom:50px;
-    text-align:center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
 }
+
+/*#endregion */
+
 #blue hr {
     width:70px;
     border:1px solid white;
@@ -55,6 +63,7 @@
     height:400px;
     background-color:#4967C3;
 }
+
 .images {
     width:80px;
     height:80px;
@@ -255,3 +264,58 @@
 .navbar-inner a:hover{
     text-decoration:none;
 }
+
+
+/*#region Team */
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.section-heading {
+    margin-top:3px;
+    margin-bottom: 3px;
+   float:right;
+}
+
+.section-heading-spacer {
+    float: right;
+    width: 150px;
+    border-top: 3px solid #e7e7e7;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+}
+
+.round-corner{
+    border-radius:10px;
+}
+
+.rightToLeft{
+    float :right !important;
+    margin-bottom:3px;
+}
+/*#endregion */
+

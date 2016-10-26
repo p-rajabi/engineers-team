@@ -16,5 +16,13 @@ namespace engineers_team.WEB.Controllers
             return View();
         }
 
+        public ActionResult Team()
+        {
+            return View();
+        }
+        public ActionResult AnyOtherPage()
+        {
+            return View();
+        }
     }
 }

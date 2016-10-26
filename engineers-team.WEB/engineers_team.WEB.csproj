@@ -227,6 +227,11 @@
     <Content Include="img\makets\second-pic.JPG" />
     <Content Include="img\pattern-overlay.png" />
     <Content Include="img\status.gif" />
+    <Content Include="img\Team\Elahe.jpg" />
+    <Content Include="img\Team\Pezhman.jpg" />
+    <Content Include="img\Team\peyman.jpg" />
+    <Content Include="img\Team\Siavash.jpg" />
+    <Content Include="img\Team\Pouneh.jpg" />
     <Content Include="img\wide.jpg" />
     <Content Include="Scripts\google.js" />
     <Content Include="Scripts\appear.js" />
@@ -270,6 +275,7 @@
     <Content Include="Views\Main\OurServices.cshtml" />
     <Content Include="Views\Main\OurWork.cshtml" />
     <Content Include="Views\Main\Menu.cshtml" />
+    <Content Include="Views\Main\Team.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
