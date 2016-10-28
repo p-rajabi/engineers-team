@@ -214,7 +214,12 @@
     <Content Include="img\bg.jpg" />
     <Content Include="img\Camera\camera-1.jpg" />
     <Content Include="img\Camera\website.jpg" />
+    <Content Include="img\IT-pics\camera1.png" />
+    <Content Include="img\IT-pics\camera2.png" />
+    <Content Include="img\IT-pics\camera3.png" />
+    <Content Include="img\IT-pics\camera4.png" />
     <Content Include="img\logo.png" />
+    <Content Include="img\main-bg.jpg" />
     <Content Include="img\mainpage.jpg" />
     <Content Include="img\makets\maket-1.jpg" />
     <Content Include="img\makets\maket-2.jpg" />
@@ -232,7 +237,6 @@
     <Content Include="img\Team\peyman.jpg" />
     <Content Include="img\Team\Siavash.jpg" />
     <Content Include="img\Team\Pouneh.jpg" />
-    <Content Include="img\wide.jpg" />
     <Content Include="Scripts\google.js" />
     <Content Include="Scripts\appear.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -276,6 +280,7 @@
     <Content Include="Views\Main\OurWork.cshtml" />
     <Content Include="Views\Main\Menu.cshtml" />
     <Content Include="Views\Main\Team.cshtml" />
+    <Content Include="Views\Main\IT.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

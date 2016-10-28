@@ -19,8 +19,8 @@ namespace engineers_team.WEB.Controllers
         public ActionResult Team()
         {
             return View();
-        }
-        public ActionResult AnyOtherPage()
+        }       
+        public ActionResult IT()
         {
             return View();
         }

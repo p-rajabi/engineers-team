@@ -4,7 +4,7 @@
 
 <div class="row">
     <div id="img" class="col-sm-12">
-        <div class=" header">
+        <div class="header">
             <div>
                 <p id="mainTitle"><b>تیم مهندسان</b></p>
             </div>
@@ -12,7 +12,7 @@
                 <p id="subTitle">نمونه کارهای پلان ساختمان، ماکت، معماری، شبکه، کارگذاری دوربین های مداربسته، طراحی وبسایت</p>
             </div>
             <div>
-                <a href="#" class="btn btn-primary buttons-ourServices">درباره ما بیشتر بدانید</a>
+                <a href="@Url.Action("Team","Main")" class="btn btn-warning buttons-ourServices">درباره ما بیشتر بدانید</a>
             </div>
         </div>
 
@@ -35,42 +35,49 @@
 
 @Html.Partial("OurWork")
 
+
+
 <div class="row" id="second-blue">
     <div class="col-sm-12">
-        <h3>The buttons below are impossible to resist.</h3>
+        <h3>کلیک روی این دکمه هارو از دست ندهید</h3>
     </div>
     <div id="space" class="col-sm-12">
-        <a href="#" id="btn-clickMe">Click Me!</a>
-        <a href="#" id="btn-lookAtMe">Look at Me!</a>
+        <a href="#" class="btn btn-warning buttons-ourServices">اینجا کلیک کنید</a>
+        <a href="#" class="btn btn-warning buttons-ourServices">به اینجا هم سر بزنید</a>
     </div>
 </div>
+
+
 <div class="row">
     <div id="map">
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12480.024463005955!2d-121.43451049999999!3d38.556672899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ada9b477715cf%3A0x2ba00da74d6f5938!2s5770+T+St%2C+Sacramento%2C+CA+95817!5e0!3m2!1sen!2sus!4v1470274261546"
+        @*<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1619.0476791376!2d51.44317439206544!3d35.748460890783655!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e0408502bb0e5%3A0x2627abb3fa44041d!2sTehran+Province%2C+Tehran%2C+W+Qanari+Alley%2C+Iran!5e0!3m2!1sen!2sus!4v1477589688652" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>*@
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d809.5192860204414!2d51.44266592925176!3d35.74890859876117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e04085e155b51%3A0xd06e9e7a4a5d7571!2sTehran+Province%2C+Tehran%2C+W+Qanari+Alley%2C+Iran!5e0!3m2!1sen!2sus!4v1477589840348"
                 frameborder="0" style="border:0" allowfullscreen></iframe>
 
     </div>
 </div>
 <div class="row">
     <div class="col-sm-12" id="footer">
-        <h4><strong>Start Bootstrap</strong></h4>
-        <address>3481 Melrose Place <br /> Beverly Hills, CA 90210</address>
+        <h2><strong>تیم مهندسان</strong></h2>
+        <address><b>تهران، سید خندان، جلفا  <br /> قناری غربی، پلاک 4 </b></address>
 
         <ul class="list-unstyled">
             <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
-            <li><i class="fa fa-envelope-o fa-fw"></i><a href="mailto:name@example.com">name@example.com</a></li>
+            <li><i class="fa fa-envelope-o fa-fw"></i><a href="mailto:Manager@engineers-team.com">Manager@engineers-team.com</a></li>
         </ul>
 
         <br />
 
         <ul class="list-inline">
-            <li><a href="#"><i class="fa fa-facebook fa-fw-3x"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter fa-fw-3x"></i></a></li>
-            <li><a href="#"><i class="fa fa-dribbble fa-fw-3x"></i></a></li>
+          @*  <li><a href="#"><i class="fa fa-telegram fa-2x"></i></a></li>*@
+            <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
+            <li><a href="#"><i class="fa fa-dribbble fa-2x"></i></a></li>
         </ul>
         <hr id="small-hr" />
-        <p class="text-muted">copyright Your Website 2014</p>
+        <p class="text-muted">Engineers-team.com © , All Rights Reserved. Made with love by www.jozaniNet.com </p>
 
     </div>
 </div>

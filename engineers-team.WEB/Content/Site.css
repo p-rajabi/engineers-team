@@ -1,9 +1,11 @@
-﻿
+﻿body,html{
+    direction:rtl
+}
 /*#region Header */
 
 
 .header {
-    padding-top: 300px;
+    padding-top: 400px;
     text-align: center;
     width: 100%;
     font-size: 36px;
@@ -19,7 +21,7 @@
 }
 
 #img {
-    background-image: url(../img/bg-JozaniNet.jpg);
+    background-image:url(../img/main-bg.jpg);
     background-size: cover;
     position: relative;
     height: 100vh;
@@ -61,7 +63,7 @@
     text-align:center;
     
     height:400px;
-    background-color:#4967C3;
+    background-color:#312316;
 }
 
 .images {
@@ -81,8 +83,9 @@
 }
 
 .buttons-ourServices{
-    background-color:white !important;
+    
     color:black !important;
+    font-weight:bold !important;
 }
 
 #services{
@@ -122,7 +125,7 @@
     text-align:center;
     
     height:200px;
-    background-color:#4967C3;
+    background-color:#312316;
 }
 #btn-clickMe {
     padding: 10px 10px 10px 10px;
@@ -175,22 +178,35 @@
     padding-bottom:50px;
 }
 
+/*#region menu */
+
 #menu-toggle {
-    z-index:1;
-    position:fixed;
-    right:0;
-}
-#menu-close {
-    z-index:1;
-    float:right;    
-    right:0;
-    
+    z-index: 1;
+    position: fixed;
+    right: 0;
 }
 
-#btnClose{
-    padding-top:20px;
-    padding-left:20px;
+#menu-close {
+    z-index: 1;
+    float: right;
+    right: 0;
 }
+
+#mynav {
+    background-color: #1A1B1C;
+    opacity: 0.9;
+    filter: alpha(opacity=30);
+    position: fixed;
+    right: -235px;
+    width: 250px;
+    height: 100%;
+    /*float:right;*/
+    color: #67686D;
+}
+
+
+/*#endregion */
+
 .toRight{
     text-align:right;
     text-decoration:none;
@@ -199,18 +215,7 @@
     margin:5px 5px 0 0;
 }
 
-#mynav {
-    background-color:#1A1B1C;
-    opacity:0.9;
-    filter:alpha(opacity=30);
-    position:fixed;
-    right:-235px;
-    width:250px;
-    height:100%;
-    float:right;
-    color:#67686D;
-   
- }
+
  .col-sm-3{
      padding-left:25px !important;
      padding-right:25px !important;
@@ -218,14 +223,13 @@
 
     #mynav ul > li > a {
         color:white;
-    padding-right:20px;
+    /*padding-right:20px;*/
     font-size:20px;
 
     }
     #mynav ul > li > a:hover {
-        color:white;
-        background-color:grey;
-    
+        color:#cc8500;
+        background-color:#ffd280;   
 
     }
 #menu-title {
@@ -235,7 +239,7 @@
     
 }
     #menu-title:hover {
-        color:#7D8183;
+        color:#cc8500 !important;
        
     }
 .sidebar-show {
@@ -265,7 +269,6 @@
     text-decoration:none;
 }
 
-
 /*#region Team */
 
 .content-section-a {
@@ -282,11 +285,11 @@
 .section-heading {
     margin-top:3px;
     margin-bottom: 3px;
-   float:right;
+   /*float:right;*/
 }
 
 .section-heading-spacer {
-    float: right;
+    
     width: 150px;
     border-top: 3px solid #e7e7e7;
 }
@@ -314,8 +317,46 @@ hr {
 }
 
 .rightToLeft{
-    float :right !important;
+    /*float :right !important;*/
     margin-bottom:3px;
+}
+p
+/*#endregion */
+
+
+/*#region IT */
+
+.img-div {
+    
+    width: 100%;
+    height: 500px;
+}
+.img-size{
+    width:100%;
+    height:500px;
+    background-size:cover;
+    
+}
+
+#img-url1{   
+    background-image:url(../img/IT-pics/camera3.png);
+    
+    }
+#img-url2{   
+    background-image:url(../img/IT-pics/camera1.png);
+    }
+#img-url3{   
+    background-image:url(../img/IT-pics/camera4.png);
+    }
+#img-url4{   
+    background-image:url(../img/IT-pics/camera2.png);
+    }
+
+img{
+    opacity:0.5;
+}
+img:hover{
+    opacity:1.0;
 }
 /*#endregion */
 
