@@ -232,9 +232,10 @@
 
     }
     #mynav ul > li > a:hover {
-        color: #3a2613;
-        background-color: #ffa600;   
-
+        color: #ffa600;
+        background-color: inherit;   
+        transform:translate(-20px);
+        transition:transform 1s ;
     }
     ul{
         margin-right:-29px;
