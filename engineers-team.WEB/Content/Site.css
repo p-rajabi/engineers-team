@@ -226,10 +226,10 @@
      padding-right:25px !important;
  }
 
-    #mynav ul > li > a {
+    #mynav ul > li > a: {
         color:white;
         font-size:20px;
-
+        
     }
     #mynav ul > li > a:hover {
         color: #ffa600;
@@ -237,6 +237,8 @@
         transform:translate(-20px);
         transition:transform 1s ;
     }
+    
+     
     ul{
         margin-right:-29px;
         
@@ -373,3 +375,69 @@ img:hover{
 }
 /*#endregion */
 
+.img-gallery {
+            filter: gray; /* IE6-9 */
+            -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+            -webkit-box-shadow: 0 2px 6px 2px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0 2px 6px 2px rgba(0,0,0,0.75);
+            box-shadow: 0 2px 6px 2px rgba(0,0,0,0.75);
+            margin-bottom: 20px;
+        }
+
+            .img-gallery:hover {
+                filter: none; /* IE6-9 */
+                -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+                mouse:pointer;
+            }
+/* Indicators list style */
+.article-slide .carousel-indicators {
+    bottom: 0;
+    left: 0;
+    margin-left: 5px;
+    width: 100%;
+}
+/* Indicators list style */
+.article-slide .carousel-indicators li {
+   
+    border: medium none;
+    border-radius: 0;
+    float: left;
+    height: 54px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 5px !important;
+    margin-top: 0;
+    width: 100px;
+}
+/* Indicators images style */
+.article-slide .carousel-indicators img {
+    border: 2px solid #FFFFFF;
+    float: left;
+    height: 54px;
+    left: 0;
+    width: 100px;
+}
+/* Indicators active image style */
+.article-slide .carousel-indicators .active img {
+    border: 2px solid #428BCA;
+    opacity: 0.7;
+}
+
+
+#contactUs{
+    margin-top:230px;
+    }
+#page{
+    background-image:url(../img/ContactUs/contactUsPic.jpg);
+    height:100vh;
+    width:100%;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+/*.container-fluid{
+    padding-right:0px;
+    padding-left:0px;
+    margin-right:auto;
+    margin-left:auto;
+}*/

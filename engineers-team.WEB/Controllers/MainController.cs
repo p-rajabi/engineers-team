@@ -24,5 +24,13 @@ namespace engineers_team.WEB.Controllers
         {
             return View();
         }
+        public ActionResult Gallery()
+        {
+            return View();
+        }
+        public ActionResult ContactUs()
+        {
+            return View();
+        }
     }
 }

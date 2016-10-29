@@ -214,6 +214,7 @@
     <Content Include="img\bg.jpg" />
     <Content Include="img\Camera\camera-1.jpg" />
     <Content Include="img\Camera\website.jpg" />
+    <Content Include="img\ContactUs\contactUsPic.jpg" />
     <Content Include="img\IT-pics\camera1.png" />
     <Content Include="img\IT-pics\camera2.png" />
     <Content Include="img\IT-pics\camera3.png" />
@@ -281,6 +282,8 @@
     <Content Include="Views\Main\Menu.cshtml" />
     <Content Include="Views\Main\Team.cshtml" />
     <Content Include="Views\Main\IT.cshtml" />
+    <Content Include="Views\Main\Gallery.cshtml" />
+    <Content Include="Views\Main\ContactUs.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
