@@ -215,22 +215,21 @@
     <Content Include="img\bg.jpg" />
     <Content Include="img\Camera\website.jpg" />
     <Content Include="img\ContactUs\contactUsPic.jpg" />
-    <Content Include="img\IT-pics\bg-camera.jpg" />
-    <Content Include="img\IT-pics\camera-pic.jpg" />
-    <Content Include="img\IT-pics\camera1.png" />
-    <Content Include="img\IT-pics\camera2.png" />
-    <Content Include="img\IT-pics\camera3.png" />
-    <Content Include="img\IT-pics\camera4.png" />
     <Content Include="img\logo.png" />
     <Content Include="img\main-bg.jpg" />
     <Content Include="img\mainpage.jpg" />
-    <Content Include="img\makets\Eli-maket\maket-house1.jpg" />
-    <Content Include="img\makets\Eli-maket\maket-house2.jpg" />
-    <Content Include="img\makets\Eli-maket\maket-house3.jpg" />
-    <Content Include="img\makets\Eli-maket\maket-house4.jpg" />
-    <Content Include="img\makets\Eli-maket\maket-house5.jpg" />
-    <Content Include="img\makets\Eli-maket\maket-house6.jpg" />
-    <Content Include="img\makets\Peji-maket\maket-1.jpg" />
+    <Content Include="img\makets\Eli-maket\pic1.png" />
+    <Content Include="img\makets\Eli-maket\pic10.png" />
+    <Content Include="img\makets\Eli-maket\pic11.png" />
+    <Content Include="img\makets\Eli-maket\pic2.png" />
+    <Content Include="img\makets\Eli-maket\pic3.png" />
+    <Content Include="img\makets\Eli-maket\pic4.png" />
+    <Content Include="img\makets\Eli-maket\pic5.png" />
+    <Content Include="img\makets\Eli-maket\pic6.png" />
+    <Content Include="img\makets\Eli-maket\pic7.png" />
+    <Content Include="img\makets\Eli-maket\pic8.png" />
+    <Content Include="img\makets\Eli-maket\pic9.png" />
+    <Content Include="img\makets\Peji-maket\maket-1-S.jpg" />
     <Content Include="img\makets\Peji-maket\maket-2.jpg" />
     <Content Include="img\makets\Peji-maket\maket-3.jpg" />
     <Content Include="img\makets\Peji-maket\maket-4.jpg" />
@@ -240,6 +239,8 @@
     <Content Include="img\makets\plan.jpg" />
     <Content Include="img\makets\second-pic.JPG" />
     <Content Include="img\pattern-overlay.png" />
+    <Content Include="img\Plan\plan1.jpg" />
+    <Content Include="img\Plan\plan2.png" />
     <Content Include="img\status.gif" />
     <Content Include="img\Team\Elahe.jpg" />
     <Content Include="img\Team\Pezhman.jpg" />
@@ -294,9 +295,11 @@
     <Content Include="Views\Main\ContactUs.cshtml" />
     <Content Include="Views\Shared\Footer.cshtml" />
     <Content Include="Views\Shared\Header.cshtml" />
+    <Content Include="Views\Main\Plan.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="img\IT-pics\" />
     <Folder Include="js\" />
     <Folder Include="Models\" />
   </ItemGroup>
