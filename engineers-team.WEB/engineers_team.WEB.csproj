@@ -205,6 +205,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\BNazanin.ttf" />
     <None Include="Properties\PublishProfiles\Live.pubxml" />
     <None Include="Properties\PublishProfiles\local C.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
@@ -212,9 +213,10 @@
     <Content Include="img\bg-JozaniNet.jpg" />
     <Content Include="img\bg-overlay.png" />
     <Content Include="img\bg.jpg" />
-    <Content Include="img\Camera\camera-1.jpg" />
     <Content Include="img\Camera\website.jpg" />
     <Content Include="img\ContactUs\contactUsPic.jpg" />
+    <Content Include="img\IT-pics\bg-camera.jpg" />
+    <Content Include="img\IT-pics\camera-pic.jpg" />
     <Content Include="img\IT-pics\camera1.png" />
     <Content Include="img\IT-pics\camera2.png" />
     <Content Include="img\IT-pics\camera3.png" />
@@ -222,13 +224,19 @@
     <Content Include="img\logo.png" />
     <Content Include="img\main-bg.jpg" />
     <Content Include="img\mainpage.jpg" />
-    <Content Include="img\makets\maket-1.jpg" />
-    <Content Include="img\makets\maket-2.jpg" />
-    <Content Include="img\makets\maket-3.jpg" />
-    <Content Include="img\makets\maket-4.jpg" />
-    <Content Include="img\makets\maket-6.jpg" />
-    <Content Include="img\makets\maket-7.jpg" />
-    <Content Include="img\makets\meket-5.jpg" />
+    <Content Include="img\makets\Eli-maket\maket-house1.jpg" />
+    <Content Include="img\makets\Eli-maket\maket-house2.jpg" />
+    <Content Include="img\makets\Eli-maket\maket-house3.jpg" />
+    <Content Include="img\makets\Eli-maket\maket-house4.jpg" />
+    <Content Include="img\makets\Eli-maket\maket-house5.jpg" />
+    <Content Include="img\makets\Eli-maket\maket-house6.jpg" />
+    <Content Include="img\makets\Peji-maket\maket-1.jpg" />
+    <Content Include="img\makets\Peji-maket\maket-2.jpg" />
+    <Content Include="img\makets\Peji-maket\maket-3.jpg" />
+    <Content Include="img\makets\Peji-maket\maket-4.jpg" />
+    <Content Include="img\makets\Peji-maket\maket-6.jpg" />
+    <Content Include="img\makets\Peji-maket\maket-7.jpg" />
+    <Content Include="img\makets\Peji-maket\meket-5.jpg" />
     <Content Include="img\makets\plan.jpg" />
     <Content Include="img\makets\second-pic.JPG" />
     <Content Include="img\pattern-overlay.png" />
@@ -284,6 +292,8 @@
     <Content Include="Views\Main\IT.cshtml" />
     <Content Include="Views\Main\Gallery.cshtml" />
     <Content Include="Views\Main\ContactUs.cshtml" />
+    <Content Include="Views\Shared\Footer.cshtml" />
+    <Content Include="Views\Shared\Header.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
