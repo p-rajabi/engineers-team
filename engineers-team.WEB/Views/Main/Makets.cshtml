@@ -1,0 +1,128 @@
+﻿@{
+    ViewBag.Title = "گالری";
+}
+
+
+@Html.Partial("Header")
+<div class="modal" id="myModal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" type="button" data-dismiss="modal">×</button>
+                <h3 class="modal-title"></h3>
+            </div>
+            <div class="modal-body">
+                <div id="modalCarousel" class="carousel">
+
+                    <div class="carousel-inner">
+
+                    </div>
+
+                    <a class="carousel-control left" href="#modaCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                    <a class="carousel-control right" href="#modalCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" style="margin-top:25px;">
+    <div class="row">
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <a href="#" title="Image 1"><img class="img-responsive img-gallery" src="~/img/makets/Peji-maket/maket-6.jpg" /></a>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <a href="#" title="Image 2"><img class="img-responsive img-gallery" src="~/img/makets/Peji-maket/maket-7.jpg" /></a>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <a href="#" title="Image 3"><img class="img-responsive img-gallery" src="~/img/makets/Peji-maket/maket-1.jpg" /></a>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <a href="#" title="Image 4"><img class="img-responsive img-gallery" src="~/img/makets/Peji-maket/maket-2.jpg" /></a>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <a href="#" title="Image 5"><img class="img-responsive img-gallery" src="~/img/makets/Peji-maket/maket-4.jpg" /></a>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <a href="#" title="Image 6"><img class="img-responsive img-gallery" src="~/img/makets/Peji-maket/maket-3.jpg" /></a>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <a href="#" title="Image 7"><img class="img-responsive img-gallery" src="~/img/makets/Peji-maket/maket-3.jpg" /></a>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <a href="#" title="Image 8"><img class="img-responsive img-gallery" src="~/img/makets/Peji-maket/maket-3.jpg" /></a>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <a href="#" title="Image 9"><img class="img-responsive img-gallery" src="~/img/makets/Eli-maket/maket-house1.jpg" /></a>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <a href="#" title="Image 10"><img class="img-responsive img-gallery" src="~/img/makets/Eli-maket/maket-house2.jpg" /></a>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <a href="#" title="Image 11"><img class="img-responsive img-gallery" src="~/img/makets/Eli-maket/maket-house3.jpg" /></a>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <a href="#" title="Image 12"><img class="img-responsive img-gallery" src="~/img/makets/Eli-maket/maket-house4.jpg" /></a>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <a href="#" title="Image 13"><img class="img-responsive img-gallery" src="~/img/makets/Eli-maket/maket-house5.jpg" /></a>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <a href="#" title="Image 14"><img class="img-responsive img-gallery" src="~/img/makets/Eli-maket/maket-house6.jpg" /></a>
+        </div>
+    </div>
+</div>
+@section header{
+    @*<style>
+        .carousel-control.left, .carousel-control.right {
+            background-image: none;
+            margin-top: 10%;
+            width: 5%;
+        }
+    </style>*@
+}
+
+@section scripts{
+    <script>
+        /* copy loaded thumbnails into carousel */
+        $('.row .img-gallery').on('load', function () {
+
+        }).each(function (i) {
+            if (this.complete) {
+                var item = $('<div class="item"></div>');
+                var itemDiv = $(this).parents('div');
+                var title = $(this).parent('a').attr("title");
+
+                item.attr("title", title);
+                $(itemDiv.html()).appendTo(item);
+                item.appendTo('.carousel-inner');
+                if (i == 0) { // set first item active
+                    item.addClass('active');
+                }
+            }
+        });
+
+        /* activate the carousel */
+        $('#modalCarousel').carousel({ interval: false });
+
+        /* change modal title when slide changes */
+        $('#modalCarousel').on('slid.bs.carousel', function () {
+            $('.modal-title').html($(this).find('.active').attr("title"));
+        })
+
+        /* when clicking a thumbnail */
+        $('.row .img-gallery').click(function () {
+            var idx = $(this).parents('div').index();
+            var id = parseInt(idx);
+            $('#myModal').modal('show'); // show the modal
+            $('#modalCarousel').carousel(id); // slide carousel to selected
+
+        });
+
+    </script>
+}
