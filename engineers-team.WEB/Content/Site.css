@@ -290,13 +290,7 @@ hr {
 
 /*#endregion */
 
-/*#region IT */
 
-
-
-
-
-/*#endregion */
 
 /*#region Makets */
 .meClass{
@@ -441,4 +435,8 @@ hr {
 .plan-size{
     width:500px;
     height:500px;
+}
+
+@media screen and (max-width:760){
+
 }

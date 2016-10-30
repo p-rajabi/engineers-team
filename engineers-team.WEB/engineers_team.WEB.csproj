@@ -215,6 +215,7 @@
     <Content Include="img\bg.jpg" />
     <Content Include="img\Camera\website.jpg" />
     <Content Include="img\ContactUs\contactUsPic.jpg" />
+    <Content Include="img\How-to-get-the-most-out-of-conferences.jpg" />
     <Content Include="img\logo.png" />
     <Content Include="img\main-bg.jpg" />
     <Content Include="img\mainpage.jpg" />
@@ -236,10 +237,9 @@
     <Content Include="img\makets\Peji-maket\maket-6.jpg" />
     <Content Include="img\makets\Peji-maket\maket-7.jpg" />
     <Content Include="img\makets\Peji-maket\meket-5.jpg" />
-    <Content Include="img\makets\plan.jpg" />
     <Content Include="img\makets\second-pic.JPG" />
     <Content Include="img\pattern-overlay.png" />
-    <Content Include="img\Plan\plan1.jpg" />
+    <Content Include="img\Plan\plan1.png" />
     <Content Include="img\Plan\plan2.png" />
     <Content Include="img\status.gif" />
     <Content Include="img\Team\Elahe.jpg" />
@@ -296,6 +296,7 @@
     <Content Include="Views\Shared\Footer.cshtml" />
     <Content Include="Views\Shared\Header.cshtml" />
     <Content Include="Views\Main\Plan.cshtml" />
+    <Content Include="Views\Main\Softwares.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
