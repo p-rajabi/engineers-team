@@ -290,7 +290,7 @@
     <Content Include="Views\Main\Menu.cshtml" />
     <Content Include="Views\Main\Team.cshtml" />
     <Content Include="Views\Main\IT.cshtml" />
-    <Content Include="Views\Main\Gallery.cshtml" />
+    <Content Include="Views\Main\Makets.cshtml" />
     <Content Include="Views\Main\ContactUs.cshtml" />
     <Content Include="Views\Shared\Footer.cshtml" />
     <Content Include="Views\Shared\Header.cshtml" />

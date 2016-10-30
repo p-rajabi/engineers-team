@@ -24,7 +24,7 @@ namespace engineers_team.WEB.Controllers
         {
             return View();
         }
-        public ActionResult Gallery()
+        public ActionResult Makets()
         {
             return View();
         }
