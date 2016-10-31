@@ -5,53 +5,58 @@
 
 @Html.Partial("Header")
 
-<div class="row" id="page" >
-    <div class="container" >
+<div class="row" id="page">
+    <div class="col-sm-12">
+        <div class="container">
 
+            <div class="row well">
 
-        <div class="row well">
+                <div class="col-sm-12" >
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="row" id="form">
+                                <form>
+                                    <div class="form-group">
+                                        <label>نام: </label>
+                                        <input class="form-control" type="text" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>موضوع: </label>
+                                        <input class="form-control" type="text" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputlg">متن ایمیل: </label>
+                                        <textarea id="textarea" class="form-control" required></textarea>
+                                    </div>
+                                    <button class="btn btn-warning buttons-ourServices " name="btn-submit">ارسال</button>
+                                </form>
 
-            <div class="col-sm-6">
-                <div class="row" id="form">
-                    <form>
-                        <div class="form-group">
-                            <label>نام: </label>
-                            <input class="form-control" type="text" required>
+                            </div>
+
                         </div>
-                        <div class="form-group">
-                            <label>موضوع: </label>
-                            <input class="form-control" type="text" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputlg">متن ایمیل: </label>
-                            <textarea id="textarea" class="form-control" style="height:200px;" required></textarea>
-                        </div>
-                        <button class="btn btn-warning buttons-ourServices btn-lg" name="btn-submit">ارسال</button>
-                    </form>
 
-                </div>
+                        <div class="col-sm-6">
+                            <div class="row" id="info">
+                                <div class="col-sm-12">
+                                    <h2><strong>تیم مهندسان</strong></h2>
+                                    <address><b>تهران، سید خندان، جلفا،  قناری غربی، پلاک 4 </b></address>
+                                    <p><i class="fa fa-phone fa-fw"></i> (123) 456-7890</p>
+                                    <p><i class="fa fa-envelope-o fa-fw"></i> Manager@engineers-team.com</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p id="contactUsMessage">ما در اینجا برای پاسخ دادن به همه سوال های شما در راستای تجربه هایمان حضور داریم. برایمان پیغام بگذارید در اولین فرصت با شما تماس خواهیم گرفت.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
             </div>
-
-            <div class="col-sm-6" id="info">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h2><strong>تیم مهندسان</strong></h2>
-                        <address><b>تهران، سید خندان، جلفا،  قناری غربی، پلاک 4 </b></address>
-                        <p><i class="fa fa-phone fa-fw"></i> (123) 456-7890</p>
-                        <p><i class="fa fa-envelope-o fa-fw"></i> Manager@engineers-team.com</p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-sm-12">
-                        <p style="font-size:20px">ما در اینجا برای پاسخ دادن به همه سوال های شما در راستای تجربه هایمان حضور داریم. برایمان پیغام بگذارید در اولین فرصت با شما تماس خواهیم گرفت.</p>
-
-                    </div>
-                </div>
+               
             </div>
         </div>
-
     </div>
-
 </div>

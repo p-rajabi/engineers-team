@@ -387,7 +387,10 @@ hr {
     background-repeat: no-repeat;
 }
 
-
+#contactUsMessage{
+    font-size:15px;
+    font-weight:bold;
+}
 /*#endregion */
 
 /*#region Footer */
@@ -520,18 +523,16 @@ hr {
     #info{
         display:none;
     }
-    #page{
-       background-color:black;
-    }
-    #info{
-        display:none;
-    }
+   
+
  .well{
-     width:340px;
-     height:300px;
-     
+     width:350px;
+     float:left;
  }
-    
+   #contactUsMessage{
+       font-size:15px;
+       font-weight:bold;
+   }
 }
 
 @media only screen and (min-width: 376px) and (max-width: 768px) {
@@ -572,14 +573,18 @@ hr {
     .softwares-des{
         font-size:15px;
     }
+
     #info{
         display:none;
     }
- .well{
-     width:300px;
-     height:300px;
-     
- }
-
+    .well{
+        height:350px;
+        width:630px;
+        
+    }
+    #contactUsMessage{
+       font-size:15px;
+       font-weight:bold;
+   }
 }
 
