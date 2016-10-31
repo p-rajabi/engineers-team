@@ -2,32 +2,34 @@
     ViewBag.Title = "صفحه اصلی";
 }
 
-<div class="row">
+<div class="row" id="main">
     <div id="img" class="col-sm-12" >
-        <div class="row header">            
-            <div class="row">
-                <p id="mainTitle"><b>تیم مهندسان</b></p>
-            </div>
-            <div class="row">
-                <p id="subTitle">مجموعه ای از رشته های عمران، معماری، شبکه و نرم افزار کامپیوتر</p>
-            </div>
-            <div>
-                <a href="@Url.Action("Team","Main")" class="btn btn-warning buttons-ourServices">درباره ما بیشتر بدانید</a>
+        <div class="row " id="flex" >            
+            
+                <p id="mainTitle" class="col-sm-12"><b>تیم مهندسان</b></p>
+            
+           
+                <p class="col-sm-12" id="subTitle">مجموعه ای از رشته های عمران، معماری، شبکه و نرم افزار کامپیوتر</p>
+            
+            <div class="col-sm-12">
+                <a id="aboutus" href="@Url.Action("Team","Main")" class="btn btn-warning buttons-ourServices ">درباره ما بیشتر بدانید</a>
             </div>
         </div>
     </div>
 </div>
-<div id="description" class="row">
-    <div class="col-sm-12">
-        
-        <h2><strong>تعریف درستی از مسايل مهندسی در دست نیست. راه حل های زیادی وجود دارد، بعضی از آنها خوب و بعضی بد یا بی اثرند. <br /> هنر در رسیدن به راه حلی خوب است. این فعالیتی خلاقانه است که لازمه اش داشتن قدرت تخیل، بینش و قدرت انتخاب سنجیده است.<br /> تیم ما با داشتن تمام این ویژگی ها اماده کمک به شما در راستای اهداف شماست. </strong></h2>
+<div  class="row">
+    <div class="col-sm-12" id="main-message">
+
+        <p ><strong>تعریف درستی از مسايل مهندسی در دست نیست. راه حل های زیادی وجود دارد، بعضی از آنها خوب و بعضی بد یا بی اثرند. <br /> هنر در رسیدن به راه حلی خوب است. این فعالیتی خلاقانه است که لازمه اش داشتن قدرت تخیل، بینش و قدرت انتخاب سنجیده است.<br /> تیم ما با داشتن تمام این ویژگی ها اماده کمک به شما در راستای اهداف شماست. </strong></p>
     </div>
 </div>
 
 @Html.Partial("OurServices")
 
-<div class="row" style="height:400px" id="img-abstract">
-<h1><strong>نمومه ای از طراحی ماکت با لیزر</strong></h1>
+<div class="row" id="img-maket">
+    <div class="col-sm-12" id="maket-title">
+        <p><strong>نمومه ای از طراحی ماکت با لیزر</strong></p>
+    </div>
 </div>
 
 @Html.Partial("OurWork")
@@ -45,7 +47,7 @@
 </div>
 
 
-<div class="row">
+<div class="row" id="address">
     <div id="map">
 
         @*<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1619.0476791376!2d51.44317439206544!3d35.748460890783655!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e0408502bb0e5%3A0x2627abb3fa44041d!2sTehran+Province%2C+Tehran%2C+W+Qanari+Alley%2C+Iran!5e0!3m2!1sen!2sus!4v1477589688652" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>*@
@@ -56,9 +58,7 @@
     </div>
 </div>
 
-<script>
-    
-</script>
+
 
 
 

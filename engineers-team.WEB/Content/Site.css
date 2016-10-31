@@ -7,14 +7,16 @@ body,h1,h2,h3,h4,h5,h6,a,p,button,b,address,strong{
 }
 
 /*#region Heading1 */
-.header {
-    padding-top: 400px;
-    text-align: center;
-    width: 100%;
-    font-size: 36px;
-    color: white;
-  
+
+#flex{
+    display:flex;
+    flex-direction:column;
+    /*justify-content:center;*/
+    text-align:center;
+    color:white;
+    padding-top:20%;
 }
+
 #mainTitle {
     font-size: 60px;
 }
@@ -48,12 +50,13 @@ body,h1,h2,h3,h4,h5,h6,a,p,button,b,address,strong{
 
 /*#region Main message of the page */
 
-#description {
+#main-message {
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
-    
+    font-size:20px;
 }
+
 
 /*#endregion */
 
@@ -66,9 +69,10 @@ body,h1,h2,h3,h4,h5,h6,a,p,button,b,address,strong{
 
 #blue {
     color: white;
-    padding-top: 50px;
+    padding-top: 30px;
+    padding-bottom:30px;
     text-align: center;
-    height: 450px;
+    /*height: 450px;*/
     background-color: #312316;
 }
 
@@ -107,32 +111,50 @@ body,h1,h2,h3,h4,h5,h6,a,p,button,b,address,strong{
 
 /*#endregion */
 
-/*#region Our Work */
 
-#ourWork {
+
+/*#region softwares */
+
+#softwares-header {
     text-align: center;
-    margin-top: 0px;
+    margin-top: 20px;
+    font-size: 30px;
 }
 
-    #ourWork hr {
-        width: 100px;
+#softwares hr {
+    width: 200px;
+}
+
+.softwares-title {
+    font-size: 25px;
+    font-weight: bold;
+    color: #993d00;
+}
+
+.softwares-des {
+    font-size: 20px;
+}
+
+/*#endregion */
+ 
+/*#region Our services */
+
+
+#ourservices{
+    font-size:30px;
+}
+    .services-titles{
+        font-size:25px;
+       
     }
-
-.office-images {
-    width: 400px;
-    height: 250px;
-    opacity: 0.5;
-}
-
-    .office-images:hover {
-        opacity: 1.0;
+    .services-des{
+        font-size:18px;
+        font-weight:100;
     }
-
-.ourwork {
-    text-align: right;
-    margin-bottom: 0px;
-}
-
+    .services-content{
+        margin-bottom:15px;
+        
+    }
 
 /*#endregion */
 
@@ -190,7 +212,7 @@ body,h1,h2,h3,h4,h5,h6,a,p,button,b,address,strong{
         transform: translate(-20px);
         transition: transform 1s;
     }
-
+   
 
 ul {
     margin-right: -29px;
@@ -205,6 +227,7 @@ ul {
     #menu-title:hover {
         color: #cc8500 !important;
     }
+ 
 
 .sidebar-show {
     z-index: 1000;
@@ -349,16 +372,21 @@ hr {
 
 /*#region ContactUs */
 
-#contactUs {
-    margin-top: 230px;
-}
+
 
 #page {
-    background-image: url(../img/ContactUs/contactUsPic.jpg);
-    height: 100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background-image: url(../img/ContactUs/contactUsPic.jpg) ;
+    height:100vh;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 
 /*#endregion */
 
@@ -399,15 +427,19 @@ hr {
 #small-hr {
     width:100px;
 }
-#img-abstract {
+#img-maket {
     background:url(../img/makets/second-pic.JPG);
     background-size:cover;
     background-attachment:fixed;
     padding-top:150px;
     text-align:center;
     color:white;
+    height:350px;
 }
-
+#maket-title{
+    font-size:35px;
+   
+}
 .pic {
     padding-bottom:20px;
 }
@@ -437,6 +469,117 @@ hr {
     height:500px;
 }
 
-@media screen and (max-width:760){
+
+@media only screen and (max-width:375px) {
+
+    #mainTitle {
+        font-size: 30px;
+    }
+    #subTitle{
+        font-size:20px;
+    }
+    #img{
+        padding-top:50%;
+        height:100vh;
+    }
+    #main-message{
+        font-size:15px;
+    }
+    #img-abstract{      
+      
+       max-width:375px !important;
+       height:auto !important;
+       background-size:cover;
+      
+    }
+    #ourservices{
+        font-size:30px;
+    }
+    .services-titles{
+        font-size:20px;
+    }
+    .services-des{
+        font-size:15px;
+    }
+    #maket-title{
+        font-size:20px;
+      
+    }
+    #img-maket{
+        height:200px;
+    }
+    #softwares-header{
+        font-size:25px;
+    }
+    .softwares-title{
+        font-size:20px;
+    }
+    .softwares-des{
+        font-size:15px;
+    }
+    #info{
+        display:none;
+    }
+    #page{
+       background-color:black;
+    }
+    #info{
+        display:none;
+    }
+ .well{
+     width:340px;
+     height:300px;
+     
+ }
+    
+}
+
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+    #mainTitle {
+        font-size: 30px;
+    }
+    #subTitle{
+        font-size:20px;
+    }
+    #img{
+        padding-top:10%;
+    }
+     #main-message{
+        font-size:15px;
+    }
+      #ourservices{
+        font-size:30px;
+    }
+    .services-titles{
+        font-size:20px;
+    }
+    .services-des{
+        font-size:15px;
+    }
+    #img-maket{
+        height:200px;
+    }
+   
+    #maket-title{
+        font-size:20px;
+    }
+    #softwares-header{
+        font-size:25px;
+    }
+    .softwares-title{
+        font-size:20px;
+    }
+    .softwares-des{
+        font-size:15px;
+    }
+    #info{
+        display:none;
+    }
+ .well{
+     width:300px;
+     height:300px;
+     
+ }
 
 }
+

@@ -1,7 +1,7 @@
 ﻿
 
 <div id="btn-menu" style="z-index:2">
-    <a href="#" class="btn btn-warning  buttons-ourServices" id="btn-open">
+    <a href="#" class="btn btn-warning  buttons-ourServices " id="btn-open">
         <i class="fa fa-bars fa-2x"></i>
     </a>
 </div>
@@ -13,16 +13,18 @@
 
     
     <div class="navbar-inner">
-        <a class="brand toRight" href="/"><h1 id="menu-title">تیم مهندسان</h1></a>
+        <a class="brand toRight" href="/" ><h1 id="menu-title">تیم مهندسان</h1></a>
 
         <br />
         <ul class="nav toRight">
-            <li class="active links" data-name="ourServices"><a href="#">خدمات ما</a></li>
-            <li><a class="links" data-name="templates" href="#")">معرفی نرم افزارها</a></li>
-            <li><a class="links" data-name="gallery" href="@Url.Action("Makets", "Main")">ماکت</a></li>
-            <li><a class="links" data-name="gallery" href="@Url.Action("IT", "Main")">دوربین مداربسته</a></li>
-            <li><a class="links" data-name="team" href="@Url.Action("Team","Main")">اعضای تیم مهندسان</a></li>
-            <li><a class="links" data-name="contactUs" href="@Url.Action("ContactUs","Main")">تماس با ما</a></li>
+            @*<li><a class="links" data-name="blue" href="@Url.Action("Index","Main")">خدمات ما</a></li>*@
+            @*<li><a class="links" data-name="softwares" href="/">معرفی نرم افزارها</a></li>*@
+            <li><a href="@Url.Action("Makets", "Main")">ماکت</a></li>
+            <li><a href="@Url.Action("IT", "Main")">دوربین مداربسته</a></li>
+            <li><a href="@Url.Action("Team","Main")">اعضای تیم مهندسان</a></li>
+            <li><a href="@Url.Action("ContactUs","Main")">تماس با ما</a></li>
+            <li><a class="links" data-name="address" href="/">آدرس</a></li>
+
         </ul>
 
 

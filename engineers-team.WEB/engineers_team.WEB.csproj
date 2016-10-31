@@ -237,6 +237,7 @@
     <Content Include="img\makets\Peji-maket\maket-6.jpg" />
     <Content Include="img\makets\Peji-maket\maket-7.jpg" />
     <Content Include="img\makets\Peji-maket\meket-5.jpg" />
+    <Content Include="img\makets\Peji-maket\maket-8.jpg" />
     <Content Include="img\makets\second-pic.JPG" />
     <Content Include="img\pattern-overlay.png" />
     <Content Include="img\Plan\plan1.png" />
@@ -281,13 +282,12 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Main\Index.cshtml" />
     <Content Include="Views\Shared\MainLayout.cshtml" />
     <Content Include="Views\Main\about.cshtml" />
     <Content Include="Views\Main\OurServices.cshtml" />
-    <Content Include="Views\Main\OurWork.cshtml" />
+    <None Include="Views\Main\OurWork.cshtml" />
     <Content Include="Views\Main\Menu.cshtml" />
     <Content Include="Views\Main\Team.cshtml" />
     <Content Include="Views\Main\IT.cshtml" />
