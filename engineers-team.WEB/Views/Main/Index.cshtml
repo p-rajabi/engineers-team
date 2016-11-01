@@ -3,24 +3,29 @@
 }
 
 <div class="row" id="main">
-    <div id="img" class="col-sm-12" >
-        <div class="row " id="flex" >            
-            
-                <p id="mainTitle" class="col-sm-12"><b>تیم مهندسان</b></p>
-            
-           
-                <p class="col-sm-12" id="subTitle">مجموعه ای از رشته های عمران، معماری، شبکه و نرم افزار کامپیوتر</p>
-            
+    <div id="img" class="col-sm-12">
+        <div class="row " id="flex">
+
+            <p id="mainTitle" class="col-sm-12"><b>تیم مهندسان</b></p>
+
+
+            <p class="col-sm-12" id="subTitle">مجموعه ای از رشته های عمران، معماری، شبکه و نرم افزار کامپیوتر</p>
+
             <div class="col-sm-12">
                 <a id="aboutus" href="@Url.Action("Team","Main")" class="btn btn-warning buttons-ourServices links" data-name="blue">درباره ما بیشتر بدانید</a>
             </div>
         </div>
     </div>
 </div>
-<div  class="row">
+<div class="row">
     <div class="col-sm-12" id="main-message">
-
-        <p ><strong>تعریف درستی از مسايل مهندسی در دست نیست. راه حل های زیادی وجود دارد، بعضی از آنها خوب و بعضی بد یا بی اثرند. <br /> هنر در رسیدن به راه حلی خوب است. این فعالیتی خلاقانه است که لازمه اش داشتن قدرت تخیل، بینش و قدرت انتخاب سنجیده است.<br /> تیم ما با داشتن تمام این ویژگی ها اماده کمک به شما در راستای اهداف شماست. </strong></p>
+        <p>
+            <strong>
+                تعریف درستی از مسايل مهندسی در دست نیست. راه حل های زیادی وجود دارد، بعضی از آنها خوب و بعضی بد یا بی اثرند.
+                <br class="hidden-xs hidden-sm"/> هنر در رسیدن به راه حلی خوب است. این فعالیتی خلاقانه است که لازمه اش داشتن قدرت تخیل، بینش و قدرت انتخاب سنجیده است.
+                <br class="hidden-xs hidden-sm" /> تیم ما با داشتن تمام این ویژگی ها اماده کمک به شما در راستای اهداف شماست.
+            </strong>
+        </p>
     </div>
 </div>
 
@@ -53,12 +58,45 @@
         @*<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1619.0476791376!2d51.44317439206544!3d35.748460890783655!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e0408502bb0e5%3A0x2627abb3fa44041d!2sTehran+Province%2C+Tehran%2C+W+Qanari+Alley%2C+Iran!5e0!3m2!1sen!2sus!4v1477589688652" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>*@
 
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d809.5192860204414!2d51.44266592925176!3d35.74890859876117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e04085e155b51%3A0xd06e9e7a4a5d7571!2sTehran+Province%2C+Tehran%2C+W+Qanari+Alley%2C+Iran!5e0!3m2!1sen!2sus!4v1477589840348"
-                frameborder="0" style="border:0" allowfullscreen></iframe>
+                frameborder="0" style="border:0;pointer-events: none" allowfullscreen></iframe>
 
     </div>
 </div>
 
+@section scripts{
+    <script>
 
+        $(document).ready(function () {
+            // Disable scroll zooming and bind back the click event
+            var onMapMouseleaveHandler = function (event) {
+                var that = $(this);
+
+                that.on('click', onMapClickHandler);
+                that.off('mouseleave', onMapMouseleaveHandler);
+                that.find('iframe').css("pointer-events", "none");
+            }
+
+            var onMapClickHandler = function (event) {
+                var that = $(this);
+
+                // Disable the click handler until the user leaves the map area
+                that.off('click', onMapClickHandler);
+
+                // Enable scrolling zoom
+                that.find('iframe').css("pointer-events", "auto");
+
+                // Handle the mouse leave event
+                that.on('mouseleave', onMapMouseleaveHandler);
+            }
+
+            // Enable map zooming with mouse scroll when the user clicks the map
+            $('#map').on('click', onMapClickHandler);
+        })
+       
+    </script>
+
+
+    }
 
 
 

@@ -61,7 +61,9 @@ body,h1,h2,h3,h4,h5,h6,a,p,button,b,address,strong{
 /*#endregion */
 
 /*#region Our Services */
-
+.services-content i{
+    margin-bottom:20px;
+}
 #blue hr {
     width: 70px;
     border: 1px solid white;
@@ -129,6 +131,7 @@ body,h1,h2,h3,h4,h5,h6,a,p,button,b,address,strong{
     font-size: 25px;
     font-weight: bold;
     color: #993d00;
+    text-align:center;
 }
 
 .softwares-des {
@@ -482,7 +485,7 @@ hr {
 }
 
 
-@media only screen and (max-width:375px) {
+@media only screen and (max-width:544px) {
 
     #mainTitle {
         font-size: 30px;
@@ -519,6 +522,9 @@ hr {
     }
     #img-maket{
         height:200px;
+        background-position:center;
+        background-size:150% 100%;
+        padding-top:25%;
     }
     #softwares-header{
         font-size:25px;
@@ -532,30 +538,43 @@ hr {
     #info{
         display:none;
     }
-   
+   #page{
+       background-image:none;
+   }
 
  .well{
-     width:350px;
+     width:338px !important;
      
  }
+ #left-message{
+     
+ }
+ 
    #contactUsMessage{
        font-size:15px;
        font-weight:bold;
    }
+   #img{
+       background-size:250% 100%;
+       background-position:center;
+   }
 }
 
-@media only screen and (min-width: 376px) and (max-width: 768px) {
+@media only screen and  (max-width: 768px) {
     #mainTitle {
-        font-size: 30px;
+        font-size: 50px;
     }
     #subTitle{
-        font-size:20px;
+        font-size:30px;
     }
     #img{
-        padding-top:10%;
+        padding-top:40%;
+         background-size:250% 100%;
+       background-position:center;
     }
      #main-message{
-        font-size:15px;
+        font-size:20px;
+        text-align:justify;
     }
       #ourservices{
         font-size:30px;
@@ -568,10 +587,15 @@ hr {
     }
     #img-maket{
         height:200px;
+        background-position:center;
+        background-size:150% 100%;
+        padding-top:80px;
+
     }
    
     #maket-title{
-        font-size:20px;
+        font-size:32px;
+
     }
     #softwares-header{
         font-size:25px;
@@ -584,11 +608,11 @@ hr {
     }
 
     #info{
-        display:none;
+        /*display:none;*/
     }
     .well{
         height:350px;
-        width:630px;
+        width:745px;
         
     }
     #contactUsMessage{
