@@ -216,10 +216,9 @@
     <Content Include="img\Camera\website.jpg" />
     <Content Include="img\ContactUs\contactUsPic.jpg" />
     <Content Include="img\How-to-get-the-most-out-of-conferences.jpg" />
-    <Content Include="img\IT-pics\pic1.png" />
-    <Content Include="img\IT-pics\pic10.png" />
-    <Content Include="img\IT-pics\pic11.png" />
-    <Content Include="img\IT-pics\pic2.png" />
+    <Content Include="img\IT-pics\FD8169-accessories.png" />
+    <Content Include="img\IT-pics\FD8169-details.png" />
+    <Content Include="img\IT-pics\FD8169.jpg" />
     <Content Include="img\logo.png" />
     <Content Include="img\main-bg.jpg" />
     <Content Include="img\mainpage.jpg" />
@@ -291,6 +290,7 @@
     <Content Include="Views\Shared\MainLayout.cshtml" />
     <Content Include="Views\Main\about.cshtml" />
     <Content Include="Views\Main\OurServices.cshtml" />
+    <Content Include="Views\Main\ITSubpage.cshtml" />
     <None Include="Views\Main\OurWork.cshtml" />
     <Content Include="Views\Main\Menu.cshtml" />
     <Content Include="Views\Main\Team.cshtml" />

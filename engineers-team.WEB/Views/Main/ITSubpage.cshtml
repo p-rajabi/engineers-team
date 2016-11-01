@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "ITSubpage";
+}
+@Html.Partial("Header")
+
+
+<div class="container">
+    <div class="row">
+       <div class="col-sm-12">
+           <div class="row">
+    <img src="~/img/IT-pics/FD8169.jpg" />
+</div>
+           <div class="row">               
+               <div id="tabs" >
+                   <ul>
+                       <li><a href="#tabs-1">جزییات</a></li>
+                       <li><a href="#tabs-2">لوازم جانبی</a></li>
+                       <li><a href="#tabs-3">بررسی اجمالی محصول</a></li>
+                   </ul>
+                   <div id="tabs-1">
+                       <img src="~/img/IT-pics/FD8169-details.png" />
+                   </div>
+                   <div id="tabs-2">
+                       <img src="~/img/IT-pics/FD8169-accessories.png" />
+                   </div>
+                   <div id="tabs-3">
+                       <p>
+                           بررسی اجمالی<br />
+                           سنسور CMOS 2 مگاپیکسلی<br />
+                           30 فریم بر ثانیه در 1920x1080<br />
+                           نمایش واقعی و ذخیره سازی در فرمت های H.264 و MJPEG<br />
+                           فیلتر مادون قرمز قابل جدا شدن برای عملکرد شب و روز<br />
+                           پرتو افکن های مادون قرمز داخلی، موثر تا حد 15 متر<br />
+                           PoE داخلی با استاندارد 802.3af<br />
+                           اسلات کارت داخلی MicroSD / SDHC / SDXC برای ذخیره سازی روی بورد<br />
+                           پشتیبانی از استاندراد ONVIF برای ساده سازی ادغام و ارتقاء ارتباطات متقابل<br />
+                           کاهش نویز 3D<br />
+                           تکنولوژی مادون قرمز هوشمند برای جلوگیری از نوردهی زیاد<br />
+                           ارتقاء WDR برای دید بینظیر در محیط های بشدت روشن یا تاریک
+                       </p>
+                   </div>
+               </div>
+
+           </div>
+           
+       </div>
+    </div>
+</div>
+
+@section scripts{
+    
+    <script>
+        $(document).ready(function () {
+            $(function () {
+                $("#tabs").tabs();
+            });
+        })
+       
+    </script>
+    }
