@@ -216,6 +216,10 @@
     <Content Include="img\Camera\website.jpg" />
     <Content Include="img\ContactUs\contactUsPic.jpg" />
     <Content Include="img\How-to-get-the-most-out-of-conferences.jpg" />
+    <Content Include="img\IT-pics\pic1.png" />
+    <Content Include="img\IT-pics\pic10.png" />
+    <Content Include="img\IT-pics\pic11.png" />
+    <Content Include="img\IT-pics\pic2.png" />
     <Content Include="img\logo.png" />
     <Content Include="img\main-bg.jpg" />
     <Content Include="img\mainpage.jpg" />
@@ -300,7 +304,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="img\IT-pics\" />
     <Folder Include="js\" />
     <Folder Include="Models\" />
   </ItemGroup>
