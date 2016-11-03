@@ -2,7 +2,7 @@
     direction:rtl;
     
 }
-body,h1,h2,h3,h4,h5,h6,a,p,button,b,address,strong{
+body,h1,h2,h3,h4,h5,h6,a,p,button,b,address,strong,span{
     font-family:bnazanin !important;
 }
 

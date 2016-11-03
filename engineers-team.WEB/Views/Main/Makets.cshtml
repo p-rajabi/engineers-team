@@ -1,178 +1,95 @@
 ﻿@{
     ViewBag.Title = "گالری";
 }
-
-
 @Html.Partial("Header")
-<div class="modal" id="myModal" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button class="close" type="button" data-dismiss="modal">×</button>
-                <h3 class="modal-title"></h3>
-            </div>
-            <div class="modal-body">
-                <div id="modalCarousel" class="carousel">
 
-                    <div class="carousel-inner">
-
-                    </div>
-
-                    <a class="carousel-control left" href="#modaCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                    <a class="carousel-control right" href="#modalCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
-
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="container" style="margin-top:25px;" id="makets-content">
-    <div class="row">
-        <div class="col-sm-8">
-            <div class="row">
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                    <a href="#" title="Image 1"><img class="img-responsive img-gallery" src="~/img/makets/Peji-maket/maket-6.jpg" /></a>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                    <a href="#" title="Image 2"><img class="img-responsive img-gallery" src="~/img/makets/Peji-maket/maket-7.jpg" /></a>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                    <a href="#" title="Image 3"><img class="img-responsive img-gallery" src="~/img/makets/Peji-maket/maket-1.jpg" /></a>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                    <a href="#" title="Image 4"><img class="img-responsive img-gallery" src="~/img/makets/Peji-maket/maket-2.jpg" /></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                    <a href="#" title="Image 5"><img class="img-responsive img-gallery" src="~/img/makets/Peji-maket/maket-4.jpg" /></a>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                    <a href="#" title="Image 6"><img class="img-responsive img-gallery" src="~/img/makets/Peji-maket/maket-3.jpg" /></a>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                    <a href="#" title="Image 7"><img class="img-responsive img-gallery" src="~/img/makets/Peji-maket/meket-5.jpg" /></a>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                    <a href="#" title="Image 8"><img class="img-responsive img-gallery" src="~/img/makets/Peji-maket/maket-8.jpg" /></a>
-                </div>
-
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                    <a href="#" title="Image 9"><img class="img-responsive img-gallery" src="~/img/makets/Eli-maket/pic1.png" /></a>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                    <a href="#" title="Image 10"><img class="img-responsive img-gallery" src="~/img/makets/Eli-maket/pic2.png" /></a>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                    <a href="#" title="Image 11"><img class="img-responsive img-gallery" src="~/img/makets/Eli-maket/pic3.png" /></a>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                    <a href="#" title="Image 12"><img class="img-responsive img-gallery" src="~/img/makets/Eli-maket/pic4.png" /></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                    <a href="#" title="Image 13"><img class="img-responsive img-gallery" src="~/img/makets/Eli-maket/pic5.png" /></a>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                    <a href="#" title="Image 14"><img class="img-responsive img-gallery" src="~/img/makets/Eli-maket/pic6.png" /></a>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                    <a href="#" title="Image 14"><img class="img-responsive img-gallery" src="~/img/makets/Eli-maket/pic7.png" /></a>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                    <a href="#" title="Image 14"><img class="img-responsive img-gallery" src="~/img/makets/Eli-maket/pic8.png" /></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                    <a href="#" title="Image 14"><img class="img-responsive img-gallery" src="~/img/makets/Eli-maket/pic9.png" /></a>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                    <a href="#" title="Image 14"><img class="img-responsive img-gallery" src="~/img/makets/Eli-maket/pic10.png" /></a>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-6">
-                    <a href="#" title="Image 14"><img class="img-responsive img-gallery" src="~/img/makets/Eli-maket/pic11.png" /></a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4" style="float:right" >
-            <h1 >نمونه هایی از ماکت ها</h1>
-            <p style="font-size:20px">امروزه ساختن ماکت با دستگاه های لیزری با ابعاد های مختلف رواج بسیاری پیدا کرده به گونه ای که حتی اساتید هم از دانشجوها درخواست کارهایی با دقت بسیار بالا میکنند , با کمی تامل به این نتیجه خواهید رسید که حتی روی سطوح فطعه های ماکت میتوانید حکاکی کنید! بله درست متوجه شدید , حکاکی . به عنوان مثال شما میتوانید یک سطح گسترده ای از آجر کاری دیوار را روی چوب و قطعات متناسب با ماکت پیاده سازی کنید همانند نمونه کار ماکت در آلبوم عکس .
-در مجموع ماکت میتواند از برش و حکاکی و جنس های های پلگسی گلسِ شفاف , مات , دوغی , مشکی و همچنین تخته های سه لایه و تمامی چوب هایی که معماران با انها سر و کار دارند, تشکیل شود.
-در آلبوم زیر میتوانید نمونه ای را مشاهده کنید که از صد عدد قطعه ی ریز و درشت تشکیل شده که نمایانگر یک تابلوی دو و نیم بعدی است. تمامی قطعات با دقت خاصی طراحی و از مرحله ی طراحی به بخش برش و در نهایت حکاکی رسیده است.<br /> 
-
-جزئیات تابلو:<br /> 
-جنس چوب سطح آجر کاری : تخته سه لایه<br />
-جنس چوب درب و پنجره ها : چوب گردو<br /> 
-شیشه ها : پلگسی گلس رنگی<br /> 
-تعداد آجر کار شده در طرح : 750 عدد<br />
-
-ابعاد :
-طول و عرض به ترتیب 50cm x 25cm
-ضخامت 1.5cm</p>
-        </div>
-    </div>
-
-</div>
 @section header{
+    <link rel="stylesheet" type="text/css" href="/Content/maket/demo.css" />
+<link rel="stylesheet" type="text/css" href="/Content/maket/style.css" />
+<link rel="stylesheet" type="text/css" href="/Content/maket/elastislide.css" />
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
+<noscript>
     <style>
-        .carousel-control.left, .carousel-control.right {
-            background-image: none;
-            margin-top: 10%;
-            width: 5%;
-            display: none;
+        .es-carousel ul {
+            display: block;
         }
     </style>
-}
+</noscript>
+<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">
+    <div class="rg-image-wrapper">
+        {{if itemsCount > 1}}
+        <div class="rg-image-nav">
+            <a href="#" class="rg-image-nav-prev">Previous Image</a>
+            <a href="#" class="rg-image-nav-next">Next Image</a>
+        </div>
+        {{/if}}
+        <div class="rg-image"></div>
+        <div class="rg-loading"></div>
+        <div class="rg-caption-wrapper">
+            <div class="rg-caption" style="display:none;">
+                <p></p>
+            </div>
+        </div>
+    </div>
+</script>
 
+
+
+    }
+
+
+<div class="content">
+    <h1>گالری ماکت </h1>
+    <h1 style="text-align:center;">طراحی ماکت ها توسط پژمان رجبی مهر</h1>
+    <p >امروزه ساختن ماکت با دستگاه های لیزری با ابعاد های مختلف رواج بسیاری پیدا کرده به گونه ای که حتی اساتید هم از دانشجوها درخواست کارهای با دقت بسیار میکنند. با کمی تامل به این نتیجه خواهید رسید که حتی روی سطح نمونه و قطعات می توان حکاکی کرد! بله درست متوجه شدید , حکاکی . به عنوان مثال شما میتوانید یک سطح گسترده ای از آجر کاری دیوار را روی چوب و قطعات متناسب با ماکت پیاده سازی کنید همانند نمونه کار ماکت در آلبوم عکس .
+در مجموع ماکت میتواند از برش و حکاکی و متریال های پلگسی گلسِ شفاف , مات , دوغی , مشکی و همچنین تخته های سه لا و تمامی چوب هایی که معماران با انها سر و کار دارند, تشکیل شود.
+در آلبوم زیر نمونه ای را مشاهده میکنید که از 100 قطعه ی ریز و درشت تشکیل شده که نمایانگر یک تابلوی دو و نیم بعدی است. تمامی قطعات با دقت خاصی طراحی و از مرحله ی طراحی به بخش برش و در نهایت حکاکی رسیده
+.
+</p>
+    <br />
+    <div id="rg-gallery" class="rg-gallery">
+        <div class="rg-thumbs">
+            <!-- Elastislide Carousel Thumbnail Viewer -->
+            <div class="es-carousel-wrapper">
+                <div class="es-nav">
+                    <span class="es-nav-prev">Previous</span>
+                    <span class="es-nav-next">Next</span>
+                </div>
+                <div class="es-carousel">
+                    <ul>
+                       
+                        <li><a href="#"><img src="~/img/makets/thumbs-eli/1.png" data-large="/img/makets/Eli-maket/1.png" alt="image01" data-description="طراحی مدرن ویلا" /></a></li>
+                        <li><a href="#"><img src="/img/makets/thumbs-eli/2.png" data-large="/img/makets/Eli-maket/2.png" alt="image02" data-description="طراحی مدرن ویلا" /></a></li>
+                        <li><a href="#"><img src="/img/makets/thumbs-eli/3.png" data-large="/img/makets/Eli-maket/3.png" alt="image03" data-description="طراحی مدرن ویلا" /></a></li>
+                        <li><a href="#"><img src="/img/makets/thumbs-eli/4.png" data-large="/img/makets/Eli-maket/4.png" alt="image04" data-description="طراحی مدرن ویلا" /></a></li>
+                        <li><a href="#"><img src="/img/makets/thumbs-eli/5.png" data-large="/img/makets/Eli-maket/5.png" alt="image05" data-description="طراحی مدرن ویلا" /></a></li>
+                        <li><a href="#"><img src="/img/makets/thumbs-eli/6.png" data-large="/img/makets/Eli-maket/6.png" alt="image06" data-description="طراحی مدرن ویلا" /></a></li>
+                        <li><a href="#"><img src="/img/makets/thumbs-eli/7.png" data-large="/img/makets/Eli-maket/7.png" alt="image07" data-description="طراحی مدرن ویلا" /></a></li>
+                        <li><a href="#"><img src="/img/makets/thumbs-eli/8.png" data-large="/img/makets/Eli-maket/8.png" alt="image08" data-description="طراحی مدرن ویلا" /></a></li>
+                        <li><a href="#"><img src="/img/makets/thumbs-eli/9.png" data-large="/img/makets/Eli-maket/9.png" alt="image09" data-description="طراحی مدرن ویلا" /></a></li>
+
+                        <li><a href="#"><img src="/img/makets/thumbs-eli/10.png" data-large="/img/makets/Eli-maket/10.png" alt="image10" data-description="تابلو امارت قدیمی" /></a></li>
+                        <li><a href="#"><img src="/img/makets/thumbs-eli/11.png" data-large="/img/makets/Eli-maket/11.png" alt="image11" data-description="تابلو امارت قدیمی" /></a></li>
+                        <li><a href="#"><img src="/img/makets/thumbs-peji/1.png" data-large="/img/makets/Peji-maket/1.png" alt="image12" data-description="تابلو امارت قدیمی" /></a></li>
+                        <li><a href="#"><img src="/img/makets/thumbs-peji/2.png" data-large="/img/makets/Peji-maket/2.png" alt="image13" data-description="تابلو امارت قدیمی" /></a></li>
+                        <li><a href="#"><img src="/img/makets/thumbs-peji/3.png" data-large="/img/makets/Peji-maket/3.png" alt=" image14" data-description="تابلو امارت قدیمی" /></a></li>
+                        <li><a href="#"><img src="/img/makets/thumbs-peji/4.png" data-large="/img/makets/Peji-maket/4.png" alt="image15" data-description="تابلو امارت قدیمی" /></a></li>
+                        <li><a href="#"><img src="/img/makets/thumbs-peji/5.png" data-large="/img/makets/Peji-maket/5.png" alt="image16" data-description="تابلو امارت قدیمی" /></a></li>
+                        <li><a href="#"><img src="/img/makets/thumbs-peji/6.png" data-large="/img/makets/Peji-maket/6.png" alt="image17" data-description="تابلو امارت قدیمی" /></a></li>
+                        <li><a href="#"><img src="/img/makets/thumbs-peji/7.png" data-large="/img/makets/Peji-maket/7.png" alt="image18" data-description="تابلو امارت قدیمی" /></a></li>
+                        <li><a href="#"><img src="/img/makets/thumbs-peji/8.png" data-large="/img/makets/Peji-maket/8.png" alt="image19" data-description="تابلو امارت قدیمی" /></a></li>
+                        <li><a href="#"><img src="/img/makets/thumbs-peji/9.png" data-large="/img/makets/Peji-maket/9.png" alt="image20" data-description="تابلو امارت قدیمی" /></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Elastislide Carousel Thumbnail Viewer -->
+        </div><!-- rg-thumbs -->
+    </div><!-- rg-gallery -->
+</div><!-- content -->
 @section scripts{
-    <script>
-        $(document).ready(function () {
-            /* copy loaded thumbnails into carousel */
-            $('.img-gallery').on('load', function () {
-
-            }).each(function (i) {
-                if (this.complete) {
-                    var item = $('<div class="item"></div>');
-                    var itemDiv = $(this).parents('div');
-                    var title = $(this).parent('a').attr("title");
-
-                    item.attr("title", title);
-                    $(itemDiv.html()).appendTo(item);
-                    item.appendTo('.carousel-inner');
-                    if (i == 0) { // set first item active
-                        item.addClass('active');
-                    }
-                }
-            });
-
-            /* activate the carousel */
-            $('#modalCarousel').carousel({ interval: false });
-
-            /* change modal title when slide changes */
-            $('#modalCarousel').on('slid.bs.carousel', function () {
-                $('.modal-title').html($(this).find('.active').attr("title"));
-                //alert($(this).html());
-                //$(this).find("img").addClass("meClass");
-            })
-
-            /* when clicking a thumbnail */
-            $('.row .img-gallery').click(function () {
-                var idx = $(this).parents('div').index();
-                var id = parseInt(idx);
-                $('#myModal').modal('show'); // show the modal
-                $('#modalCarousel').carousel(id); // slide carousel to selected
-
-            });
-        });
-
-    </script>
+<script type="text/javascript" src="/Scripts/maket/jquery.tmpl.min.js"></script>
+<script type="text/javascript" src="/Scripts/maket/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="/Scripts/maket/jquery.elastislide.js"></script>
+<script type="text/javascript" src="/Scripts/maket/gallery.js"></script>   
 }
