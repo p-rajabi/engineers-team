@@ -14,7 +14,7 @@ body,h1,h2,h3,h4,h5,h6,a,p,button,b,address,strong,span{
     /*justify-content:center;*/
     text-align:center;
     color:white;
-    padding-top:20%;
+    padding-top:27%;
 }
 
 #mainTitle {
@@ -22,11 +22,11 @@ body,h1,h2,h3,h4,h5,h6,a,p,button,b,address,strong,span{
 }
 
 #subTitle {
-    font-size: 50px;
+    font-size: 45px;
 }
 
 #img {
-    background-image: url(../img/main-bg.jpg);
+    background-image: url(../img/darker-img.jpg);
     background-size: cover;
     position: relative;
     height: 100vh;
@@ -320,65 +320,13 @@ hr {
 
 /*#region Makets */
 
-
-
-.meClass{
-    -webkit-filter:initial !important;
+#maket-des{
+    font-size:20px;
 }
-
-
-.img-gallery {
-    filter: gray; /* IE6-9 */
-    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
-    -webkit-box-shadow: 0 2px 6px 2px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0 2px 6px 2px rgba(0,0,0,0.75);
-    box-shadow: 0 2px 6px 2px rgba(0,0,0,0.75);
-    margin-bottom: 20px;
+.maket-designer{
+    font-size:25px;
+    text-align:center;
 }
-
-    .img-gallery:hover {
-        filter: none; /* IE6-9 */
-        -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
-        cursor: pointer;
-    }
-/* Indicators list style */
-.article-slide .carousel-indicators {
-    bottom: 0;
-    left: 0;
-    margin-left: 5px;
-    width: 100%;
-}
-    /* Indicators list style */
-    .article-slide .carousel-indicators li {
-        border: medium none;
-        border-radius: 0;
-        float: left;
-        height: 54px;
-        margin-bottom: 5px;
-        margin-left: 0;
-        margin-right: 5px !important;
-        margin-top: 0;
-        width: 100px;
-    }
-    /* Indicators images style */
-    .article-slide .carousel-indicators img {
-        border: 2px solid #FFFFFF;
-        float: left;
-        height: 54px;
-        left: 0;
-        width: 100px;
-    }
-    /* Indicators active image style */
-    .article-slide .carousel-indicators .active img {
-        border: 2px solid #428BCA;
-        opacity: 0.7;
-    }
-
-    
-    #article-photo-carousel{
-
-    }
-
 /*#endregion */
 
 /*#region ContactUs */
@@ -426,6 +374,197 @@ hr {
 
 /*#endregion */
 
+
+
+@font-face{
+    font-family:bnazanin;
+    src:url(../fonts/BNazanin.ttf);
+}
+
+.plan-size{
+    width:500px;
+    height:500px;
+}
+
+
+@media only screen and (max-width:544px) {
+
+    #mainTitle {
+        font-size: 30px;
+        padding-top:50%;
+    }
+    #subTitle{
+        font-size:20px !important;
+    }
+    #img{
+        padding-top:50%;
+        height:100vh;
+    }
+    #main-message{
+        font-size:15px;
+    }
+    #img-abstract{      
+      
+       max-width:375px !important;
+       height:auto !important;
+       background-size:cover;
+      
+    }
+    #ourservices{
+        font-size:30px;
+    }
+    .services-titles{
+        font-size:20px;
+    }
+    .services-des{
+        font-size:15px;
+    }
+    #maket-title{
+        font-size:20px;
+      
+    }
+    #img-maket{
+        height:200px;
+        background-position:center;
+        background-size:150% 100%;
+        padding-top:60%;
+    }
+    #softwares-header{
+        font-size:25px;
+    }
+    .softwares-title{
+        font-size:20px;
+    }
+    .softwares-des{
+        font-size:15px;
+    }
+    #info{
+        display:none;
+    }
+   #page{
+       background-image:none;
+   }
+
+ .well{
+     width:338px !important;
+     
+ }
+ #left-message{
+     
+ }
+ 
+   #contactUsMessage{
+       font-size:15px;
+       font-weight:bold;
+   }
+   #img{
+       background-size:250% 100%;
+       background-position:center;
+   }
+   #maket-des{
+       display:none;
+   }
+}
+
+@media only screen and  (max-width: 768px) {
+    #mainTitle {
+        font-size: 50px;
+        
+    }
+    #subTitle{
+        font-size:30px;
+    }
+    #img{
+        padding-top:40%;
+         background-size:250% 100%;
+       background-position:center;
+    }
+     #main-message{
+        font-size:20px;
+        text-align:justify;
+    }
+      #ourservices{
+        font-size:30px;
+    }
+    .services-titles{
+        font-size:20px;
+    }
+    .services-des{
+        font-size:15px;
+    }
+    #img-maket{
+        height:200px;
+        background-position:center;
+        background-size:150% 100%;
+        padding-top:30px;
+
+    }
+   
+    #maket-title{
+        font-size:32px;
+
+    }
+    #softwares-header{
+        font-size:25px;
+    }
+    .softwares-title{
+        font-size:20px;
+    }
+    .softwares-des{
+        font-size:15px;
+    }
+
+    #info{
+        /*display:none;*/
+    }
+    .well{
+        height:350px;
+        width:745px;
+        
+    }
+    #contactUsMessage{
+       font-size:15px;
+       font-weight:bold;
+   }
+     #maket-des{
+       font-size:15px;
+   }
+    
+}
+
+@media only screen and (max-width:640px){
+    #img{
+        padding-top:5%;
+    }
+    #mainTitle{
+        font-size:40px;
+    }
+    #subTitle{
+        font-size:20px;
+    }
+    #maket-des{
+       font-size:15px;
+   }
+    
+}
+
+
+
+
+
+
+
+.mydiv {   
+    background-color: rgba(255,255,255,0.9);
+    text-align:center;
+    
+    padding-top:20px;
+    
+   
+    margin-bottom:20px;     
+}
+
+
 #space {
     margin-top:30px;
 }
@@ -471,178 +610,3 @@ hr {
      padding-left:25px !important;
      padding-right:25px !important;
  }
-
-
-
-@font-face{
-    font-family:bnazanin;
-    src:url(../fonts/BNazanin.ttf);
-}
-
-.plan-size{
-    width:500px;
-    height:500px;
-}
-
-
-@media only screen and (max-width:544px) {
-
-    #mainTitle {
-        font-size: 30px;
-        padding-top:50%;
-    }
-    #subTitle{
-        font-size:20px;
-    }
-    #img{
-        padding-top:50%;
-        height:100vh;
-    }
-    #main-message{
-        font-size:15px;
-    }
-    #img-abstract{      
-      
-       max-width:375px !important;
-       height:auto !important;
-       background-size:cover;
-      
-    }
-    #ourservices{
-        font-size:30px;
-    }
-    .services-titles{
-        font-size:20px;
-    }
-    .services-des{
-        font-size:15px;
-    }
-    #maket-title{
-        font-size:20px;
-      
-    }
-    #img-maket{
-        height:200px;
-        background-position:center;
-        background-size:150% 100%;
-        padding-top:25%;
-    }
-    #softwares-header{
-        font-size:25px;
-    }
-    .softwares-title{
-        font-size:20px;
-    }
-    .softwares-des{
-        font-size:15px;
-    }
-    #info{
-        display:none;
-    }
-   #page{
-       background-image:none;
-   }
-
- .well{
-     width:338px !important;
-     
- }
- #left-message{
-     
- }
- 
-   #contactUsMessage{
-       font-size:15px;
-       font-weight:bold;
-   }
-   #img{
-       background-size:250% 100%;
-       background-position:center;
-   }
-}
-
-@media only screen and  (max-width: 768px) {
-    #mainTitle {
-        font-size: 50px;
-        
-    }
-    #subTitle{
-        font-size:30px;
-    }
-    #img{
-        padding-top:40%;
-         background-size:250% 100%;
-       background-position:center;
-    }
-     #main-message{
-        font-size:20px;
-        text-align:justify;
-    }
-      #ourservices{
-        font-size:30px;
-    }
-    .services-titles{
-        font-size:20px;
-    }
-    .services-des{
-        font-size:15px;
-    }
-    #img-maket{
-        height:200px;
-        background-position:center;
-        background-size:150% 100%;
-        padding-top:80px;
-
-    }
-   
-    #maket-title{
-        font-size:32px;
-
-    }
-    #softwares-header{
-        font-size:25px;
-    }
-    .softwares-title{
-        font-size:20px;
-    }
-    .softwares-des{
-        font-size:15px;
-    }
-
-    #info{
-        /*display:none;*/
-    }
-    .well{
-        height:350px;
-        width:745px;
-        
-    }
-    #contactUsMessage{
-       font-size:15px;
-       font-weight:bold;
-   }
-
-    
-}
-
-@media only screen and (max-width:640px){
-    #img{
-        padding-top:5%;
-    }
-    #mainTitle{
-        font-size:40px;
-    }
-    #subTitle{
-        font-size:30px;
-    }
-}
-
-.mydiv {   
-    background-color: rgba(255,255,255,0.9);
-    text-align:center;
-    
-    padding-top:20px;
-    
-   
-    margin-bottom:20px;     
-}
