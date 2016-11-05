@@ -1,0 +1,158 @@
+﻿@{
+    ViewBag.Title = "Website";
+}
+@Html.Partial("Header")
+<link href="~/Content/pricing-tables.css" rel="stylesheet" />
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <div class="intro-message">
+                <h3>چه نوع وبسایتی مناسب نیاز شماست؟ <a href="@Url.Action("ContactUs","Main")">با ما تماس بگیرید</a></h3>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.container -->
+
+
+<div class="content-section-b">
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-4 col-md-4">
+                <div class="plan">
+
+                    <div class="head">
+                        <h2>صفحه ایستاتیک</h2>
+
+                    </div>
+
+                    <ul class="item-list">
+                        <li>متناسب برای <strong>بیزینس های کوچک</strong></li>
+                        <li>3 ماه <strong>پشتیبانی رایگان</strong>*</li>
+                        <li>تا  <strong>6</strong> بخش</li>
+                        <li>کاملا <strong>Responsive</strong></li>
+                        <li>تماس با <strong>ایمیل</strong> اتوماتبک</li>
+                    </ul>
+
+                    <div class="price">
+                        <h2><span>تومان</span>500،000</h2>
+                    </div>
+
+                    <button type="button" class="btn btn-success">سفارش</button>
+                    <br />
+                    <br />
+                    <div class="col-md-12 text-right"><a href="@Url.Action("Works", "Home", new { s=1})">نمونه کار</a></div>
+
+                </div>
+
+            </div>
+            <div class="col-sm-4 col-md-4">
+
+                <div class="plan firstScale">
+
+                    <div class="head">
+                        <h2>ایستاتیک</h2>
+
+                    </div>
+
+                    <ul class="item-list">
+                        <li>تا <strong>5</strong>صفحه HTML </li>
+                        <li>دومین <strong>سال اول رایگان</strong></li>
+                        <li>3 ماه <strong>پشتیبانی رایگان</strong>*</li>
+                        <li>کاملا <strong>Responsive</strong></li>
+                        <li>تماس با <strong>ایمیل</strong> اتوماتبک</li>
+
+                    </ul>
+
+                    <div class="price">
+                        <h2><span>تومان</span>800،000</h2>
+
+                    </div>
+
+                    <button type="button" class="btn btn-success">سفارش</button>
+                    <br />
+                    <br />
+                    <div class="col-md-12 text-right"><a href="@Url.Action("Works", "Home", new { s=2})">نمونه کار</a></div>
+                </div>
+
+
+            </div>
+
+            <div class="col-sm-4 col-md-4 ">
+
+                <div class="plan">
+
+                    <div class="head">
+                        <h2>داینامیک</h2>
+                    </div>
+
+                    <ul class="item-list">
+                        <li>طراحی داشبورد ادمین به شکل دلخواه</li>
+                        <li><strong>داشبورد ادمین</strong>کاملا امن </li>
+                        <li><strong>متن دلخواه</strong>, مدیریت توسط شما</li>
+                        <li>دومین <strong>سال اول رایگان</strong></li>
+                        <li>3 ماه <strong>پشتیبانی رایگان</strong>*</li>
+
+                    </ul>
+
+                    <div class="price">
+                        <h2><span>تومان</span>1،000،000</h2>
+
+
+                    </div>
+
+                    <button type="button" class="btn btn-success">سفارش</button>
+                    <br />
+                    <br />
+                    <div class="col-md-12 text-right"><a href="@Url.Action("Works", "Home", new { s=3})">نمونه کار</a></div>
+
+                </div>
+
+            </div>
+
+            @*<div class="col-sm-3 col-md-3 ">
+
+                <div class="plan">
+
+                    <div class="head">
+                        <h2>Premium</h2>
+                    </div>
+
+                    <ul class="item-list">
+                        <li>Complete Enterprise Functionality</li>
+                        <li>Fully Customizable Admin Dashboard</li>
+                        <li>User Management plus User Roles</li>
+                        <li>Based on You Requirements</li>
+                        <li>3 ماه <strong>پشتیبانی رایگان</strong>*</li>
+
+                    </ul>
+
+                    <div class="price">
+                        <h2>Ask for Price</h2>
+
+                    </div>
+
+                    <button type="button" class="btn btn-success">تماس با ما</button>
+                    <br />
+                    <br />
+                    <div class="col-md-12 text-right"><a href="@Url.Action("Works", "Home", new { s=4})">نمونه کار</a></div>
+                </div>
+
+            </div>*@
+
+        </div>
+    </div>
+</div>
+@section scripts{
+    <script>
+        $(function () {
+            $(".plan").hover(function () {
+                console.log($("body").width());
+                $(".plan").removeClass("firstScale");
+            });
+        });
+    </script>
+
+}

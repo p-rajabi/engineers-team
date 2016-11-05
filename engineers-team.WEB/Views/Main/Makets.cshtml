@@ -4,7 +4,7 @@
 @Html.Partial("Header")
 
 @section header{
-    <link rel="stylesheet" type="text/css" href="/Content/maket/demo.css" />
+<link rel="stylesheet" type="text/css" href="/Content/maket/demo.css" />
 <link rel="stylesheet" type="text/css" href="/Content/maket/style.css" />
 <link rel="stylesheet" type="text/css" href="/Content/maket/elastislide.css" />
 <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
@@ -18,6 +18,7 @@
     </style>
 </noscript>
 <script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">
+
     <div class="rg-image-wrapper">
         {{if itemsCount > 1}}
         <div class="rg-image-nav">
@@ -33,14 +34,20 @@
             </div>
         </div>
     </div>
+
 </script>
 
-
+    <style>
+       /*body,html{
+    direction:ltr;
+    
+}*/
+    </style>
 
     }
 
 
-<div class="content">
+<div class="content" >
     <p class="maket-designer">گالری ماکت </p>
     <p class="maket-designer">طراحی توسط پژمان رجبی مهر</p>
     <br />
@@ -49,46 +56,46 @@
 در آلبوم زیر نمونه ای را مشاهده میکنید که از 100 قطعه ی ریز و درشت تشکیل شده که نمایانگر یک تابلوی دو و نیم بعدی است. تمامی قطعات با دقت خاصی طراحی و از مرحله ی طراحی به بخش برش و در نهایت حکاکی رسیده است
 .
 </p>
-    <br />
-    <div id="rg-gallery" class="rg-gallery">
-        <div class="rg-thumbs">
-            <!-- Elastislide Carousel Thumbnail Viewer -->
-            <div class="es-carousel-wrapper">
-                <div class="es-nav">
-                    <span class="es-nav-prev">Previous</span>
-                    <span class="es-nav-next">Next</span>
+    <br class="hidden-xs"/>
+    <div>
+        <div id="rg-gallery" class="rg-gallery">
+            <div class="rg-thumbs">
+                <!-- Elastislide Carousel Thumbnail Viewer -->
+                <div class="es-carousel-wrapper">
+                    <div class="es-nav">
+                        <span class="es-nav-prev">Previous</span>
+                        <span class="es-nav-next">Next</span>
+                    </div>
+                    <div class="es-carousel">
+                        <ul>
+                            <li><a href="#"><img src="/img/makets/thumbs-eli/1.png" data-large="/img/makets/Eli-maket/1.png" alt="image01" data-description="طراحی مدرن ویلا" /></a></li>
+                            <li><a href="#"><img src="/img/makets/thumbs-eli/2.png" data-large="/img/makets/Eli-maket/2.png" alt="image02" data-description="طراحی مدرن ویلا" /></a></li>
+                            <li><a href="#"><img src="/img/makets/thumbs-eli/3.png" data-large="/img/makets/Eli-maket/3.png" alt="image03" data-description="طراحی مدرن ویلا" /></a></li>
+                            <li><a href="#"><img src="/img/makets/thumbs-eli/4.png" data-large="/img/makets/Eli-maket/4.png" alt="image04" data-description="طراحی مدرن ویلا" /></a></li>
+                            <li><a href="#"><img src="/img/makets/thumbs-eli/5.png" data-large="/img/makets/Eli-maket/5.png" alt="image05" data-description="طراحی مدرن ویلا" /></a></li>
+                            <li><a href="#"><img src="/img/makets/thumbs-eli/6.png" data-large="/img/makets/Eli-maket/6.png" alt="image06" data-description="طراحی مدرن ویلا" /></a></li>
+                            <li><a href="#"><img src="/img/makets/thumbs-eli/7.png" data-large="/img/makets/Eli-maket/7.png" alt="image07" data-description="طراحی مدرن ویلا" /></a></li>
+                            <li><a href="#"><img src="/img/makets/thumbs-eli/8.png" data-large="/img/makets/Eli-maket/8.png" alt="image08" data-description="طراحی مدرن ویلا" /></a></li>
+                            <li><a href="#"><img src="/img/makets/thumbs-eli/9.png" data-large="/img/makets/Eli-maket/9.png" alt="image09" data-description="طراحی مدرن ویلا" /></a></li>
+                            <li><a href="#"><img src="/img/makets/thumbs-eli/10.png" data-large="/img/makets/Eli-maket/10.png" alt="image10" data-description="تابلو امارت قدیمی" /></a></li>
+                            <li><a href="#"><img src="/img/makets/thumbs-eli/11.png" data-large="/img/makets/Eli-maket/11.png" alt="image11" data-description="تابلو امارت قدیمی" /></a></li>
+                            <li><a href="#"><img src="/img/makets/thumbs-peji/1.png" data-large="/img/makets/Peji-maket/1.png" alt="image12" data-description="تابلو امارت قدیمی" /></a></li>
+                            <li><a href="#"><img src="/img/makets/thumbs-peji/2.png" data-large="/img/makets/Peji-maket/2.png" alt="image13" data-description="تابلو امارت قدیمی" /></a></li>
+                            <li><a href="#"><img src="/img/makets/thumbs-peji/3.png" data-large="/img/makets/Peji-maket/3.png" alt=" image14" data-description="تابلو امارت قدیمی" /></a></li>
+                            <li><a href="#"><img src="/img/makets/thumbs-peji/4.png" data-large="/img/makets/Peji-maket/4.png" alt="image15" data-description="تابلو امارت قدیمی" /></a></li>
+                            <li><a href="#"><img src="/img/makets/thumbs-peji/5.png" data-large="/img/makets/Peji-maket/5.png" alt="image16" data-description="تابلو امارت قدیمی" /></a></li>
+                            <li><a href="#"><img src="/img/makets/thumbs-peji/6.png" data-large="/img/makets/Peji-maket/6.png" alt="image17" data-description="تابلو امارت قدیمی" /></a></li>
+                            <li><a href="#"><img src="/img/makets/thumbs-peji/7.png" data-large="/img/makets/Peji-maket/7.png" alt="image18" data-description="تابلو امارت قدیمی" /></a></li>
+                            <li><a href="#"><img src="/img/makets/thumbs-peji/8.png" data-large="/img/makets/Peji-maket/8.png" alt="image19" data-description="تابلو امارت قدیمی" /></a></li>
+                            <li><a href="#"><img src="/img/makets/thumbs-peji/9.png" data-large="/img/makets/Peji-maket/9.png" alt="image20" data-description="تابلو امارت قدیمی" /></a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="es-carousel">
-                    <ul>                       
-                        <li><a href="#"><img src="~/img/makets/thumbs-eli/1.png" data-large="/img/makets/Eli-maket/1.png" alt="image01" data-description="طراحی مدرن ویلا" /></a></li>
-                        <li><a href="#"><img src="/img/makets/thumbs-eli/2.png" data-large="/img/makets/Eli-maket/2.png" alt="image02" data-description="طراحی مدرن ویلا" /></a></li>
-                        <li><a href="#"><img src="/img/makets/thumbs-eli/3.png" data-large="/img/makets/Eli-maket/3.png" alt="image03" data-description="طراحی مدرن ویلا" /></a></li>
-                        <li><a href="#"><img src="/img/makets/thumbs-eli/4.png" data-large="/img/makets/Eli-maket/4.png" alt="image04" data-description="طراحی مدرن ویلا" /></a></li>
-                        <li><a href="#"><img src="/img/makets/thumbs-eli/5.png" data-large="/img/makets/Eli-maket/5.png" alt="image05" data-description="طراحی مدرن ویلا" /></a></li>
-                        <li><a href="#"><img src="/img/makets/thumbs-eli/6.png" data-large="/img/makets/Eli-maket/6.png" alt="image06" data-description="طراحی مدرن ویلا" /></a></li>
-                        <li><a href="#"><img src="/img/makets/thumbs-eli/7.png" data-large="/img/makets/Eli-maket/7.png" alt="image07" data-description="طراحی مدرن ویلا" /></a></li>
-                        <li><a href="#"><img src="/img/makets/thumbs-eli/8.png" data-large="/img/makets/Eli-maket/8.png" alt="image08" data-description="طراحی مدرن ویلا" /></a></li>
-                        <li><a href="#"><img src="/img/makets/thumbs-eli/9.png" data-large="/img/makets/Eli-maket/9.png" alt="image09" data-description="طراحی مدرن ویلا" /></a></li>
+                <!-- End Elastislide Carousel Thumbnail Viewer -->
+            </div><!-- rg-thumbs -->
+        </div><!-- rg-gallery -->
 
-
-                       
-                        <li><a href="#"><img src="/img/makets/thumbs-eli/10.png" data-large="/img/makets/Eli-maket/10.png" alt="image10" data-description="تابلو امارت قدیمی" /></a></li>
-                        <li><a href="#"><img src="/img/makets/thumbs-eli/11.png" data-large="/img/makets/Eli-maket/11.png" alt="image11" data-description="تابلو امارت قدیمی" /></a></li>
-                        <li><a href="#"><img src="/img/makets/thumbs-peji/1.png" data-large="/img/makets/Peji-maket/1.png" alt="image12" data-description="تابلو امارت قدیمی" /></a></li>
-                        <li><a href="#"><img src="/img/makets/thumbs-peji/2.png" data-large="/img/makets/Peji-maket/2.png" alt="image13" data-description="تابلو امارت قدیمی" /></a></li>
-                        <li><a href="#"><img src="/img/makets/thumbs-peji/3.png" data-large="/img/makets/Peji-maket/3.png" alt=" image14" data-description="تابلو امارت قدیمی" /></a></li>
-                        <li><a href="#"><img src="/img/makets/thumbs-peji/4.png" data-large="/img/makets/Peji-maket/4.png" alt="image15" data-description="تابلو امارت قدیمی" /></a></li>
-                        <li><a href="#"><img src="/img/makets/thumbs-peji/5.png" data-large="/img/makets/Peji-maket/5.png" alt="image16" data-description="تابلو امارت قدیمی" /></a></li>
-                        <li><a href="#"><img src="/img/makets/thumbs-peji/6.png" data-large="/img/makets/Peji-maket/6.png" alt="image17" data-description="تابلو امارت قدیمی" /></a></li>
-                        <li><a href="#"><img src="/img/makets/thumbs-peji/7.png" data-large="/img/makets/Peji-maket/7.png" alt="image18" data-description="تابلو امارت قدیمی" /></a></li>
-                        <li><a href="#"><img src="/img/makets/thumbs-peji/8.png" data-large="/img/makets/Peji-maket/8.png" alt="image19" data-description="تابلو امارت قدیمی" /></a></li>
-                        <li><a href="#"><img src="/img/makets/thumbs-peji/9.png" data-large="/img/makets/Peji-maket/9.png" alt="image20" data-description="تابلو امارت قدیمی" /></a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- End Elastislide Carousel Thumbnail Viewer -->
-        </div><!-- rg-thumbs -->
-    </div><!-- rg-gallery -->
+    </div>
 </div><!-- content -->
 @section scripts{
 <script type="text/javascript" src="/Scripts/maket/jquery.tmpl.min.js"></script>
