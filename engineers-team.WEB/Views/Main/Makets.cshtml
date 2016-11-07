@@ -4,105 +4,203 @@
 @Html.Partial("Header")
 
 @section header{
-<link rel="stylesheet" type="text/css" href="/Content/maket/demo.css" />
-<link rel="stylesheet" type="text/css" href="/Content/maket/style.css" />
-<link rel="stylesheet" type="text/css" href="/Content/maket/elastislide.css" />
-<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
-<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
-@*<link href="~/Content/Site.css" rel="stylesheet" />*@
-<noscript>
-    <style>
-        .es-carousel ul {
-            display: block;
-        }
-    </style>
-</noscript>
-<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">
+<script src="~/Scripts/architect/jquery.mobile.customized.min.js"></script>
+<script src="~/Scripts/maket/jquery.easing.1.3.js"></script>
+<script src="~/Scripts/architect/camera.js"></script>
+<link href="~/Content/architect/camera.css" rel="stylesheet" />
+}
 
-    <div class="rg-image-wrapper">
-        {{if itemsCount > 1}}
-        <div class="rg-image-nav">
-            <a href="#" class="rg-image-nav-prev">Previous Image</a>
-            <a href="#" class="rg-image-nav-next">Next Image</a>
-        </div>
-        {{/if}}
-        <div class="rg-image"></div>
-        <div class="rg-loading"></div>
-        <div class="rg-caption-wrapper">
-            <div class="rg-caption" style="display:none;">
-                <p></p>
-            </div>
-        </div>
-    </div>
+<script>
+    jQuery(function () {
 
+        jQuery('#camera_wrap_1').camera({
+            thumbnails: true
+        });
+
+        jQuery('#camera_wrap_2').camera({
+            height: '400px',
+            loader: 'bar',
+            pagination: false,
+            thumbnails: true
+        });
+    });
 </script>
 
-    <style>
-       body,html{
-    direction:ltr;
-    
-}
-       #mynav{
-           direction:rtl;
-       }
-    </style>
-
+<style>
+    body {
+        margin: 0;
+        padding: 0;
     }
 
+    a {
+        color: #09f;
+    }
 
-<div class="content" >
-    <p class="maket-designer">گالری ماکت </p>
-    <p class="maket-designer">طراحی توسط پژمان رجبی مهر</p>
-    <br />
-    <p id="maket-des" >امروزه ساختن ماکت با دستگاه های لیزری با ابعاد های مختلف رواج بسیاری پیدا کرده به گونه ای که حتی اساتید هم از دانشجوها درخواست کارهای با دقت بسیار میکنند. با کمی تامل به این نتیجه خواهید رسید که حتی روی سطح نمونه و قطعات می توان حکاکی کرد! بله درست متوجه شدید , حکاکی . به عنوان مثال شما میتوانید یک سطح گسترده ای از آجر کاری دیوار را روی چوب و قطعات متناسب با ماکت پیاده سازی کنید همانند نمونه کار ماکت در آلبوم عکس .
-در مجموع ماکت میتواند از برش و حکاکی و متریال های پلگسی گلسِ شفاف , مات , دوغی , مشکی و همچنین تخته های سه لا و تمامی چوب هایی که معماران با انها سر و کار دارند, تشکیل شود.
-در آلبوم زیر نمونه ای را مشاهده میکنید که از 100 قطعه ی ریز و درشت تشکیل شده که نمایانگر یک تابلوی دو و نیم بعدی است. تمامی قطعات با دقت خاصی طراحی و از مرحله ی طراحی به بخش برش و در نهایت حکاکی رسیده است
-.
-</p>
-    <br class="hidden-xs"/>
-    <div>
-        <div id="rg-gallery" class="rg-gallery">
-            <div class="rg-thumbs">
-                <!-- Elastislide Carousel Thumbnail Viewer -->
-                <div class="es-carousel-wrapper">
-                    <div class="es-nav">
-                        <span class="es-nav-prev">Previous</span>
-                        <span class="es-nav-next">Next</span>
-                    </div>
-                    <div class="es-carousel">
-                        <ul>
-                            <li><a href="#"><img src="/img/makets/thumbs-eli/1.png" data-large="/img/makets/Eli-maket/1.png" alt="image01" data-description="طراحی مدرن ویلا" /></a></li>
-                            <li><a href="#"><img src="/img/makets/thumbs-eli/2.png" data-large="/img/makets/Eli-maket/2.png" alt="image02" data-description="طراحی مدرن ویلا" /></a></li>
-                            <li><a href="#"><img src="/img/makets/thumbs-eli/3.png" data-large="/img/makets/Eli-maket/3.png" alt="image03" data-description="طراحی مدرن ویلا" /></a></li>
-                            <li><a href="#"><img src="/img/makets/thumbs-eli/4.png" data-large="/img/makets/Eli-maket/4.png" alt="image04" data-description="طراحی مدرن ویلا" /></a></li>
-                            <li><a href="#"><img src="/img/makets/thumbs-eli/5.png" data-large="/img/makets/Eli-maket/5.png" alt="image05" data-description="طراحی مدرن ویلا" /></a></li>
-                            <li><a href="#"><img src="/img/makets/thumbs-eli/6.png" data-large="/img/makets/Eli-maket/6.png" alt="image06" data-description="طراحی مدرن ویلا" /></a></li>
-                            <li><a href="#"><img src="/img/makets/thumbs-eli/7.png" data-large="/img/makets/Eli-maket/7.png" alt="image07" data-description="طراحی مدرن ویلا" /></a></li>
-                            <li><a href="#"><img src="/img/makets/thumbs-eli/8.png" data-large="/img/makets/Eli-maket/8.png" alt="image08" data-description="طراحی مدرن ویلا" /></a></li>
-                            <li><a href="#"><img src="/img/makets/thumbs-eli/9.png" data-large="/img/makets/Eli-maket/9.png" alt="image09" data-description="طراحی مدرن ویلا" /></a></li>
-                            <li><a href="#"><img src="/img/makets/thumbs-eli/10.png" data-large="/img/makets/Eli-maket/10.png" alt="image10" data-description="تابلو امارت قدیمی" /></a></li>
-                            <li><a href="#"><img src="/img/makets/thumbs-eli/11.png" data-large="/img/makets/Eli-maket/11.png" alt="image11" data-description="تابلو امارت قدیمی" /></a></li>
-                            <li><a href="#"><img src="/img/makets/thumbs-peji/1.png" data-large="/img/makets/Peji-maket/1.png" alt="image12" data-description="تابلو امارت قدیمی" /></a></li>
-                            <li><a href="#"><img src="/img/makets/thumbs-peji/2.png" data-large="/img/makets/Peji-maket/2.png" alt="image13" data-description="تابلو امارت قدیمی" /></a></li>
-                            <li><a href="#"><img src="/img/makets/thumbs-peji/3.png" data-large="/img/makets/Peji-maket/3.png" alt=" image14" data-description="تابلو امارت قدیمی" /></a></li>
-                            <li><a href="#"><img src="/img/makets/thumbs-peji/4.png" data-large="/img/makets/Peji-maket/4.png" alt="image15" data-description="تابلو امارت قدیمی" /></a></li>
-                            <li><a href="#"><img src="/img/makets/thumbs-peji/5.png" data-large="/img/makets/Peji-maket/5.png" alt="image16" data-description="تابلو امارت قدیمی" /></a></li>
-                            <li><a href="#"><img src="/img/makets/thumbs-peji/6.png" data-large="/img/makets/Peji-maket/6.png" alt="image17" data-description="تابلو امارت قدیمی" /></a></li>
-                            <li><a href="#"><img src="/img/makets/thumbs-peji/7.png" data-large="/img/makets/Peji-maket/7.png" alt="image18" data-description="تابلو امارت قدیمی" /></a></li>
-                            <li><a href="#"><img src="/img/makets/thumbs-peji/8.png" data-large="/img/makets/Peji-maket/8.png" alt="image19" data-description="تابلو امارت قدیمی" /></a></li>
-                            <li><a href="#"><img src="/img/makets/thumbs-peji/9.png" data-large="/img/makets/Peji-maket/9.png" alt="image20" data-description="تابلو امارت قدیمی" /></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- End Elastislide Carousel Thumbnail Viewer -->
-            </div><!-- rg-thumbs -->
-        </div><!-- rg-gallery -->
+        a:hover {
+            text-decoration: none;
+        }
 
+    #back_to_camera {
+        clear: both;
+        display: block;
+        height: 80px;
+        line-height: 40px;
+        padding: 20px;
+    }
+
+    .fluid_container {
+        margin: 0 auto;
+        max-width: 1000px;
+        width: 90%;
+    }
+
+    .architect-title {
+        font-size: 30px;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #architect-designer {
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+</style>
+
+<div class="fluid_container">
+    <p class="architect-title">طراحی ماکت تابلو و بنای مدرن</p>
+    <p id="architect-designer">توسط پژمان رجبی مهر</p>
+
+    <div class="camera_wrap camera_azure_skin row" id="camera_wrap_1">
+        <div data-thumb="/img/makets/thumbs-eli/1.jpg" data-src="/img/makets/Eli-maket/1.jpg">
+            <div class="camera_caption fadeFromBottom">
+                responsive slideshow.
+            </div>
+        </div>
+        <div data-thumb="/img/makets/thumbs-eli/2.jpg" data-src="/img/makets/Eli-maket/3.jpg">
+            <div class="camera_caption fadeFromBottom">
+                responsive slideshow.
+            </div>
+        </div>
+        <div data-thumb="/img/makets/thumbs-eli/3.jpg" data-src="/img/makets/Eli-maket/3.jpg">
+            <div class="camera_caption fadeFromBottom">
+                responsive slideshow.
+            </div>
+        </div>
+        <div data-thumb="/img/makets/thumbs-eli/4.jpg" data-src="/img/makets/Eli-maket/4.jpg">
+            <div class="camera_caption fadeFromBottom">
+                Camera slideshow provides many options <em>to customize your project</em> as more as possible
+            </div>
+        </div>
+        <div data-thumb="/img/makets/thumbs-eli/5.jpg" data-src="/img/makets/Eli-maket/5.jpg">
+            <div class="camera_caption fadeFromBottom">
+                responsive slideshow.
+            </div>
+        </div>
+        <div data-thumb="/img/makets/thumbs-eli/6.jpg" data-src="/img/makets/Eli-maket/6.jpg">
+            <div class="camera_caption fadeFromBottom">
+                طراحی نمای ساختمان با قلم
+            </div>
+        </div>
+        <div data-thumb="/img/makets/thumbs-eli/7.jpg" data-src="/img/makets/Eli-maket/7.jpg">
+            <div class="camera_caption fadeFromBottom">
+                طراحی نمای ساختمان با قلم
+            </div>
+        </div>
+        <div data-thumb="/img/makets/thumbs-eli/8.jpg" data-src="/img/makets/Eli-maket/8.jpg">
+            <div class="camera_caption fadeFromBottom">
+                طراحی نمای ساختمان با قلم
+            </div>
+        </div>
+        <div data-thumb="/img/makets/thumbs-eli/9.jpg" data-src="/img/makets/Eli-maket9.jpg">
+            <div class="camera_caption fadeFromBottom">
+                طراحی نمای ساختمان با قلم
+            </div>
+        </div>
+        
+
+
+ 
+
+
+</div><!-- #camera_wrap_1 -->
+
+    
+    <div class="camera_wrap camera_magenta_skin" id="camera_wrap_2">
+       
+        <div data-thumb="/img/makets/thumbs-peji/1.jpg" data-src="/img/makets/Peji-maket/1.jpg">
+            <div class="camera_caption fadeFromBottom">
+                Camera is a responsive/adaptive slideshow. <em>Try to resize the browser window</em>
+            </div>
+        </div>
+        <div data-thumb="/img/makets/thumbs-peji/2.jpg" data-src="/img/makets/Peji-maket/2.jpg">
+            <div class="camera_caption fadeFromBottom">
+                It uses a light version of jQuery mobile, <em>navigate the slides by swiping with your fingers</em>
+            </div>
+        </div>
+        <div data-thumb="/img/makets/thumbs-peji/3.jpg" data-src="/img/makets/Peji-maket/3.jpg">
+            <div class="camera_caption fadeFromBottom">
+                <em>It's completely free</em> (even if a donation is appreciated)
+            </div>
+        </div>
+        <div data-thumb="/img/makets/thumbs-peji/4.jpg" data-src="/img/makets/Peji-maket/4.jpg">
+            <div class="camera_caption fadeFromBottom">
+                Camera slideshow provides many options <em>to customize your project</em> as more as possible
+            </div>
+        </div>
+        <div data-thumb="/img/makets/thumbs-peji/5.jpg" data-src="/img/makets/Peji-maket/5.jpg">
+            <div class="camera_caption fadeFromBottom">
+                It supports captions
+            </div>
+        </div>
+        <div data-thumb="/img/makets/thumbs-peji/6.jpg" data-src="/img/makets/Peji-maket/6.jpg">
+            <div class="camera_caption fadeFromBottom">
+                Different color skins and layouts available, <em>fullscreen ready too</em>
+            </div>
+        </div>
+        <div data-thumb="/img/makets/thumbs-peji/7.jpg" data-src="/img/makets/Peji-maket/7.jpg">
+            <div class="camera_caption fadeFromBottom">
+                Different color skins and layouts available, <em>fullscreen ready too</em>
+            </div>
+        </div>
+        <div data-thumb="/img/makets/thumbs-peji/8.jpg" data-src="/img/makets/Peji-maket/8.jpg">
+            <div class="camera_caption fadeFromBottom">
+                Different color skins and layouts available, <em>fullscreen ready too</em>
+            </div>
+        </div>
+        <div data-thumb="/img/makets/thumbs-peji/9.jpg" data-src="/img/makets/Peji-maket/9.jpg">
+            <div class="camera_caption fadeFromBottom">
+                Different color skins and layouts available, <em>fullscreen ready too</em>
+            </div>
+        </div>
+        <div data-thumb="/img/makets/thumbs-peji/10.jpg" data-src="/img/makets/Peji-maket/10.jpg">
+            <div class="camera_caption fadeFromBottom">
+                Different color skins and layouts available, <em>fullscreen ready too</em>
+            </div>
+        </div>
+        <div data-thumb="/img/makets/thumbs-peji/11.jpg" data-src="/img/makets/Peji-maket/11.jpg">
+            <div class="camera_caption fadeFromBottom">
+                Different color skins and layouts available, <em>fullscreen ready too</em>
+            </div>
+        </div>
+        <div data-thumb="/img/makets/thumbs-peji/12.jpg" data-src="/img/makets/Peji-maket/12.jpg">
+            <div class="camera_caption fadeFromBottom">
+                Different color skins and layouts available, <em>fullscreen ready too</em>
+            </div>
+        </div>
+        <div data-thumb="/img/makets/thumbs-peji/13.jpg" data-src="/img/makets/Peji-maket/13.jpg">
+            <div class="camera_caption fadeFromBottom">
+                Different color skins and layouts available, <em>fullscreen ready too</em>
+            </div>
+        </div>
+        <div data-thumb="/img/makets/thumbs-peji/14.jpg" data-src="/img/makets/Peji-maket/14.jpg">
+            <div class="camera_caption fadeFromBottom">
+                Different color skins and layouts available, <em>fullscreen ready too</em>
+            </div>
+        </div>
+        </div>
     </div>
-</div><!-- content -->
-@section scripts{
-<script type="text/javascript" src="/Scripts/maket/jquery.tmpl.min.js"></script>
-<script type="text/javascript" src="/Scripts/maket/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="/Scripts/maket/jquery.elastislide.js"></script>
-<script type="text/javascript" src="/Scripts/maket/gallery.js"></script>   
-}
+    @*#camera_wrap_2*@
+
+    <div style="clear:both; display:block; height:100px"></div>
