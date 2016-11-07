@@ -11,12 +11,12 @@ body,h1,h2,h3,h4,h5,h6,a,p,button,b,address,strong,span{
 /*#region Heading1 */
 
 #flex{
-    display:flex;
-    flex-direction:column;
+    /*display:flex;
+    flex-direction:column;*/
     /*justify-content:center;*/
-    text-align:center;
-    color:white;
-    padding-top:27%;
+    /*text-align:center;
+    color:white;*/
+    /*padding-top:400px;*/
 }
 
 #mainTitle {
@@ -33,6 +33,9 @@ body,h1,h2,h3,h4,h5,h6,a,p,button,b,address,strong,span{
     position: relative;
     height: 100vh;
     background-attachment: fixed;
+     text-align:center;
+    color:white;
+    padding-top:400px;
 }
 
 .findMe {
@@ -269,12 +272,16 @@ ul {
 .content-section-a {
     padding: 50px 0;
     background-color: #f8f8f8;
+    padding-left:15px;
+    padding-right:15px;
 }
 
 .content-section-b {
     padding: 50px 0;
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
+    padding-left:15px;
+    padding-right:15px;
 }
 
 .section-heading {
@@ -395,23 +402,6 @@ hr {
 
 
 
-@media only screen and (max-width:640px){
-    #img{
-        padding-top:5%;
-    }
-    #mainTitle{
-        font-size:40px;
-    }
-    #subTitle{
-        font-size:20px;
-    }
-    #maket-des{
-       font-size:15px;
-   }
-    
-}
-
-
 
 
 
@@ -483,7 +473,7 @@ hr {
         font-size:30px;
     }
     #img{
-        padding-top:40%;
+        padding-top:400px;
          background-size:250% 100%;
        background-position:center;
     }
@@ -503,6 +493,7 @@ hr {
     #img-maket{
         height:200px;
         background-position:center;
+
         background-size:150% 100%;
         padding-top:30px;
 
@@ -540,6 +531,25 @@ hr {
     
 }
 
+
+
+@media only screen and (max-width:667px){
+    #img{
+        padding-top:90px;
+    }
+    #mainTitle{
+        font-size:40px;
+    }
+    #subTitle{
+        font-size:20px;
+    }
+    #maket-des{
+       font-size:15px;
+   }
+    
+}
+
+
 @media only screen and (max-width:544px) {
 
     #mainTitle {
@@ -550,7 +560,7 @@ hr {
         font-size:20px !important;
     }
     #img{
-        padding-top:50%;
+        /*padding-top:50%;*/
         height:100vh;
     }
     #main-message{
