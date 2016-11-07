@@ -44,6 +44,10 @@ namespace engineers_team.WEB.Controllers
         {
             return View();
         }
+        public ActionResult Architect()
+        {
+            return View();
+        }
 
     }
 }
