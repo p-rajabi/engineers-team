@@ -1,0 +1,113 @@
+﻿@{
+    ViewBag.Title = "Website Samples";
+}
+
+@Html.Partial("Header")
+
+
+
+
+<style>
+    .row .caption {
+        padding: 10px;
+        padding-bottom: 20px;
+    }
+
+    #modalText {
+        padding: 20px;
+    }
+</style>
+
+<script type="text/javascript">
+    $("document").ready(function myfunction() {
+        $(".row img").each(function () {
+            var theURL = $(this).data("url");
+            var siteTitle = $(this).data("title");
+            $(this).next().append('<a href="' + theURL + '" target="_blank">' + siteTitle + '</a>');
+        });
+        $(".img-responsive").click(function () {
+            var imagePathToLoad = $(this).attr("src");
+            $("#ImagePlaceholder").attr("src", imagePathToLoad);
+            $("#myModalLabel").text($(this).data("title"))
+            $("#modalText").text($(this).data("discription"))
+            $('#myModal').modal();
+        });
+    });
+
+</script>
+
+
+
+<div class="container" style="padding-top:70px;">
+
+    <div class="row">
+       
+
+        <div class="col-md-4">
+            <img data-id="p1" src="/img/worksPicture/immiboard.jpg" class="img-responsive" data-url="http://www.immiboard.com/" data-discription="کنسرت ها و اتفاقات نزدیک شما" data-title="ImmiBoard">
+            <div class="caption">
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <img data-id="p4" src="/img/worksPicture/jjoekimonos.jpg" class="img-responsive" data-url="http://www.jjoekimonos.com/" data-discription="فروش محصولات کیمونو" data-title="J Joe Kimonos">
+            <div class="caption">
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <img data-id="p5" src="/img/worksPicture/acceptableidea.jpg" class="img-responsive" data-url="http://www.acceptableidea.com/" data-discription="ایده های قابل قبول" data-title="Acceptable Idea">
+            <div class="caption">
+            </div>
+        </div>
+       
+    </div>
+    <div class="row">
+     
+        
+        
+    </div>
+    <div class="row">
+       
+        <div class="col-md-4">
+            <img data-id="p7" src="/img/worksPicture/glasscompany.jpg" class="img-responsive" data-url="http://www.firstglasscompany.com/" data-discription="کارخانه تولید شیشه برای انواع مصرف ها" data-title="First Glass Company">
+            <div class="caption">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <img data-id="p1" src="/img/worksPicture/jozaniNet-workSection.jpg" class="img-responsive" data-url="http://wwww.jozaninet.com/" data-discription="طراحی وب سایت" data-title="Jozani Network">
+            <div class="caption">
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <img data-id="p1" src="/img/worksPicture/engineers-team.png" class="img-responsive" data-url="http://engineers-team.com/" data-discription="مجموعه ای از مهندسان برتر" data-title="Engineers-Team">
+            <div class="caption">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body" id="ImageLoaderDiv">
+                    <img src="" id="ImagePlaceholder" class="img-responsive" />
+                    <p id="modalText"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+

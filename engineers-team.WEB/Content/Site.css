@@ -1,16 +1,16 @@
-﻿body,html{
-    direction:rtl;
-    
+﻿body, html {
+    direction: rtl;
 }
-body,h1,h2,h3,h4,h5,h6,a,p,button,b,address,strong,span{
-    font-family:bnazanin !important;
+
+body, h1, h2, h3, h4, h5, h6, a, p, button, b, address, strong, span {
+    font-family: bnazanin !important;
 }
 
 
 
 /*#region Heading1 */
 
-#flex{
+#flex {
     /*display:flex;
     flex-direction:column;*/
     /*justify-content:center;*/
@@ -32,11 +32,11 @@ body,h1,h2,h3,h4,h5,h6,a,p,button,b,address,strong,span{
     background-size: cover;
     position: relative;
     height: 100vh;
-    background-attachment:fixed;
-    -moz-background-attachment:fixed;
-    text-align:center;
-    color:white;
-    padding-top:400px;
+    background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    text-align: center;
+    color: white;
+    padding-top: 400px;
 }
 
 .findMe {
@@ -60,16 +60,17 @@ body,h1,h2,h3,h4,h5,h6,a,p,button,b,address,strong,span{
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
-    font-size:20px;
+    font-size: 20px;
 }
 
 
 /*#endregion */
 
 /*#region Our Services */
-.services-content i{
-    margin-bottom:20px;
+.services-content i {
+    margin-bottom: 20px;
 }
+
 #blue hr {
     width: 70px;
     border: 1px solid white;
@@ -78,7 +79,7 @@ body,h1,h2,h3,h4,h5,h6,a,p,button,b,address,strong,span{
 #blue {
     color: white;
     padding-top: 30px;
-    padding-bottom:30px;
+    padding-bottom: 30px;
     text-align: center;
     /*height: 450px;*/
     background-color: #312316;
@@ -137,7 +138,7 @@ body,h1,h2,h3,h4,h5,h6,a,p,button,b,address,strong,span{
     font-size: 25px;
     font-weight: bold;
     color: #993d00;
-    text-align:center;
+    text-align: center;
 }
 
 .softwares-des {
@@ -145,25 +146,26 @@ body,h1,h2,h3,h4,h5,h6,a,p,button,b,address,strong,span{
 }
 
 /*#endregion */
- 
+
 /*#region Our services */
 
 
-#ourservices{
-    font-size:30px;
+#ourservices {
+    font-size: 30px;
 }
-    .services-titles{
-        font-size:25px;
-       
-    }
-    .services-des{
-        font-size:18px;
-        font-weight:100;
-    }
-    .services-content{
-        margin-bottom:15px;
-        
-    }
+
+.services-titles {
+    font-size: 25px;
+}
+
+.services-des {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.services-content {
+    margin-bottom: 15px;
+}
 
 /*#endregion */
 
@@ -180,18 +182,20 @@ body,h1,h2,h3,h4,h5,h6,a,p,button,b,address,strong,span{
 /*#endregion */
 
 /*#region Menu */
-#btn-menu {    
+#btn-menu {
     position: fixed;
     top: 20px;
     right: 16px;
     font-size: 18px;
-    z-index:1000;
-    }
+    z-index: 1000;
+}
+
 #menu-toggle {
     z-index: 1;
     position: fixed;
     right: 0;
 }
+
 #mynav {
     background-color: #1A1B1C;
     opacity: 0.9;
@@ -203,25 +207,26 @@ body,h1,h2,h3,h4,h5,h6,a,p,button,b,address,strong,span{
     /*float:right;*/
     color: #67686D;
 }
-#mynav ul > li > a {
-    color: white;
-    font-size: 20px;
-}
 
-    #mynav ul > li > a:not(:hover) {
+    #mynav ul > li > a {
         color: white;
         font-size: 20px;
-        transform: translate(0px);
-        transition: transform 1s;
     }
 
-    #mynav ul > li > a:hover {
-        color: #ffa600;
-        background-color: inherit;
-        transform: translate(-20px);
-        transition: transform 1s;
-    }
-   
+        #mynav ul > li > a:not(:hover) {
+            color: white;
+            font-size: 20px;
+            transform: translate(0px);
+            transition: transform 1s;
+        }
+
+        #mynav ul > li > a:hover {
+            color: #ffa600;
+            background-color: inherit;
+            transform: translate(-20px);
+            transition: transform 1s;
+        }
+
 
 ul {
     margin-right: -29px;
@@ -236,7 +241,7 @@ ul {
     #menu-title:hover {
         color: #cc8500 !important;
     }
- 
+
 
 .sidebar-show {
     z-index: 1000;
@@ -273,26 +278,25 @@ ul {
 .content-section-a {
     padding: 50px 0;
     background-color: #f8f8f8;
-    padding-left:15px;
-    padding-right:15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .content-section-b {
     padding: 50px 0;
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
-    padding-left:15px;
-    padding-right:15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .section-heading {
-    margin-top:3px;
+    margin-top: 3px;
     margin-bottom: 3px;
-   /*float:right;*/
+    /*float:right;*/
 }
 
 .section-heading-spacer {
-    
     width: 150px;
     border-top: 3px solid #e7e7e7;
 }
@@ -315,13 +319,13 @@ hr {
     list-style: none;
 }
 
-.round-corner{
-    border-radius:10px;
+.round-corner {
+    border-radius: 10px;
 }
 
-.rightToLeft{
+.rightToLeft {
     /*float :right !important;*/
-    margin-bottom:3px;
+    margin-bottom: 3px;
 }
 
 /*#endregion */
@@ -330,12 +334,13 @@ hr {
 
 /*#region Makets */
 
-#maket-des{
-    font-size:20px;
+#maket-des {
+    font-size: 20px;
 }
-.maket-designer{
-    font-size:25px;
-    text-align:center;
+
+.maket-designer {
+    font-size: 25px;
+    text-align: center;
 }
 
 
@@ -346,21 +351,21 @@ hr {
 
 
 #page {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    background-image: url(../img/ContactUs/contactUsPic.jpg) ;
-    height:100vh;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../img/ContactUs/contactUsPic.jpg);
+    height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-#contactUsMessage{
-    font-size:15px;
-    font-weight:bold;
+#contactUsMessage {
+    font-size: 15px;
+    font-weight: bold;
 }
 
 /*#endregion */
@@ -388,167 +393,169 @@ hr {
 
 
 
-@font-face{
-    font-family:bnazanin;
-    src:url(../fonts/BNazanin.ttf);
+@font-face {
+    font-family: bnazanin;
+    src: url(../fonts/BNazanin.ttf);
 }
 
-.plan-size{
-    width:500px;
-    height:500px;
+.plan-size {
+    width: 500px;
+    height: 500px;
 }
 
-
-
-
-
-
-
-
-
-
-
-.mydiv {   
+.mydiv {
     background-color: rgba(255,255,255,0.9);
-    text-align:center;
-    
-    padding-top:20px;
-    
-   
-    margin-bottom:20px;     
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
 }
 
 
 #space {
-    margin-top:30px;
+    margin-top: 30px;
 }
 
 #map iframe {
-    width:100%;
-    height:400px;
+    width: 100%;
+    height: 400px;
 }
+
 #footer {
-    margin-top:50px;
-    text-align:center;
-    margin-bottom:50px;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
 }
+
 #small-hr {
-    width:100px;
+    width: 100px;
 }
+
 #img-maket {
-    background:url(../img/makets/second-pic.JPG);
-    background-size:cover;
-    background-attachment:fixed;
-    padding-top:150px;
-    text-align:center;
-    color:white;
-    height:350px;
+    background: url(../img/makets/second-pic.JPG);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 150px;
+    text-align: center;
+    color: white;
+    height: 350px;
 }
-#maket-title{
-    font-size:35px;
-   
+
+#maket-title {
+    font-size: 35px;
 }
+
 .pic {
-    padding-bottom:20px;
+    padding-bottom: 20px;
 }
 
 
 
 
 .toggle {
-    margin:5px 5px 0 0;
+    margin: 5px 5px 0 0;
 }
 
 
- .col-sm-3{
-     padding-left:25px !important;
-     padding-right:25px !important;
- }
- 
-@media only screen and  (max-width: 768px) {
+.col-sm-3 {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
+
+@media only screen and (max-width: 768px) {
     #mainTitle {
         font-size: 50px;
+    }
+
+    #subTitle {
+        font-size: 30px;
+    }
+
+    #img {
+        padding-top: 400px;
+        background-size: 250% 100%;
+        background-position: center;
         
     }
-    #subTitle{
-        font-size:30px;
-    }
-    #img{
-        padding-top:400px;
-        background-size:250% 100%;
-       background-position:center;
-    }
-     #main-message{
-        font-size:20px;
-        text-align:justify;
-    }
-      #ourservices{
-        font-size:30px;
-    }
-    .services-titles{
-        font-size:20px;
-    }
-    .services-des{
-        font-size:15px;
-    }
-    #img-maket{
-        height:200px;
-        background-position:center;
 
-        background-size:150% 100%;
-        -moz-background-size:150% 100%;
-        padding-top:30px;
-
-    }
-   
-    #maket-title{
-        font-size:32px;
-
-    }
-    #softwares-header{
-        font-size:25px;
-    }
-    .softwares-title{
-        font-size:20px;
-    }
-    .softwares-des{
-        font-size:15px;
+    #main-message {
+        font-size: 20px;
+        text-align: justify;
     }
 
-    #info{
+    #ourservices {
+        font-size: 30px;
+    }
+
+    .services-titles {
+        font-size: 20px;
+    }
+
+    .services-des {
+        font-size: 15px;
+    }
+
+    #img-maket {
+        height: 200px;
+        background-position: center;
+        background-size: 150% 100%;
+        -moz-background-size: 150% 100%;
+        padding-top: 90px;
+    }
+
+    #maket-title {
+        font-size: 32px;
+    }
+
+    #softwares-header {
+        font-size: 25px;
+    }
+
+    .softwares-title {
+        font-size: 20px;
+    }
+
+    .softwares-des {
+        font-size: 15px;
+    }
+
+    #info {
         /*display:none;*/
     }
-    .well{
-        height:350px;
-        width:745px;
-        
+
+    .well {
+        height: 350px;
+        width: 745px;
     }
-    #contactUsMessage{
-       font-size:15px;
-       font-weight:bold;
-   }
-     #maket-des{
-       font-size:15px;
-   }
-    
+
+    #contactUsMessage {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #maket-des {
+        font-size: 15px;
+    }
 }
 
 
 
-@media only screen and (max-width:667px){
-    #img{
-        padding-top:90px;
+@media only screen and (max-width:667px) {
+    #img {
+        padding-top: 90px;
+        
     }
-    #mainTitle{
-        font-size:40px;
+
+    #mainTitle {
+        font-size: 40px;
     }
-    #subTitle{
-        font-size:20px;
+
+    #subTitle {
+        font-size: 20px;
     }
-    #maket-des{
-       font-size:15px;
-   }
-    
+
+    #maket-des {
+        font-size: 15px;
+    }
 }
 
 
@@ -556,82 +563,89 @@ hr {
 
     #mainTitle {
         font-size: 30px;
-        padding-top:50%;
+        padding-top: 50%;
     }
-    #subTitle{
-        font-size:20px !important;
-    }
-    #img{
-        /*padding-top:50%;*/
-        height:100vh;
-     
-    }
-    #main-message{
-        font-size:15px;
-    }
-    #img-abstract{      
-      
-       max-width:375px !important;
-       height:auto !important;
-       background-size:cover;
-        -moz-background-size:cover;
 
-      
+    #subTitle {
+        font-size: 20px !important;
     }
-    #ourservices{
-        font-size:30px;
-    }
-    .services-titles{
-        font-size:20px;
-    }
-    .services-des{
-        font-size:15px;
-    }
-    #maket-title{
-        font-size:20px;
-      
-    }
-    #img-maket{
-        height:200px;
-        background-position:center;
-        background-size:150% 100%;
-        -moz-background-size:150% 100%;
 
-        padding-top:60%;
+    
+    #main-message {
+        font-size: 15px;
     }
-    #softwares-header{
-        font-size:25px;
-    }
-    .softwares-title{
-        font-size:20px;
-    }
-    .softwares-des{
-        font-size:15px;
-    }
-    #info{
-        display:none;
-    }
-   #page{
-       background-image:none;
-   }
 
- .well{
-     width:338px !important;
-     
- }
- #left-message{
-     
- }
- 
-   #contactUsMessage{
-       font-size:15px;
-       font-weight:bold;
-   }
-   #img{
-       background-size:250% 100%;
-       background-position:center;
-   }
-   #maket-des{
-       display:none;
-   }
+    #img-abstract {
+        max-width: 375px !important;
+        height: auto !important;
+        background-size: cover;
+        -moz-background-size: cover;
+    }
+
+    #ourservices {
+        font-size: 30px;
+    }
+
+    .services-titles {
+        font-size: 20px;
+    }
+
+    .services-des {
+        font-size: 15px;
+    }
+
+    #maket-title {
+        font-size: 20px;
+    }
+
+    #img-maket {
+        height: 200px;
+        background-position: center;
+        background-size: 150% 100%;
+        -moz-background-size: 150% 100%;
+        padding-top: 90px;
+    }
+
+    #softwares-header {
+        font-size: 25px;
+    }
+
+    .softwares-title {
+        font-size: 20px;
+    }
+
+    .softwares-des {
+        font-size: 15px;
+    }
+
+    #info {
+        display: none;
+    }
+
+    #page {
+        background-image: none;
+    }
+
+    .well {
+        width: 338px !important;
+    }
+
+    #left-message {
+    }
+
+    #contactUsMessage {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #img {
+        height: 100vh;
+        background-size: 250% 100%;
+        background-position: center;
+        background-attachment: scroll;
+    }
+
+    #maket-des {
+        display: none;
+    }
 }

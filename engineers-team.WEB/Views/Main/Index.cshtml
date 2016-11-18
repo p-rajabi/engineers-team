@@ -67,6 +67,9 @@
     <script>
 
         $(document).ready(function () {
+            var clientHeight = $(window).height();
+            $('#img').css('height', clientHeight);
+
             // Disable scroll zooming and bind back the click event
             var onMapMouseleaveHandler = function (event) {
                 var that = $(this);

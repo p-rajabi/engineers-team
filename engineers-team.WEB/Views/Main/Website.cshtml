@@ -1,7 +1,15 @@
 ﻿@{
-    ViewBag.Title = "Website";
+    ViewBag.Title = "طراحی وب سایت";
 }
 @Html.Partial("Header")
+
+<style>
+    #Samples{
+        background-color:white;
+        padding:50px;
+    }
+</style>
+
 <link href="~/Content/pricing-tables.css" rel="stylesheet" />
 
 <div class="container">
@@ -25,7 +33,7 @@
                 <div class="plan">
 
                     <div class="head">
-                        <h2>صفحه ایستاتیک</h2>
+                        <h2>صفحه استاتیک</h2>
 
                     </div>
 
@@ -38,13 +46,12 @@
                     </ul>
 
                     <div class="price">
-                        <h2><span>500،000</span> تومان</h2>
+                        <h2><span>1,500،000</span> تومان</h2>
                     </div>
 
                     <button type="button" class="btn btn-success">سفارش</button>
                     <br />
-                    <br />
-                    <div class="col-md-12 text-right"><a href="@Url.Action("Works", "Home", new { s=1})">نمونه کار</a></div>
+               
 
                 </div>
 
@@ -54,7 +61,7 @@
                 <div class="plan firstScale">
 
                     <div class="head">
-                        <h2>ایستاتیک</h2>
+                        <h2>استاتیک</h2>
 
                     </div>
 
@@ -68,14 +75,13 @@
                     </ul>
 
                     <div class="price">
-                        <h2><span>800،000</span> تومان</h2>
+                        <h2><span>2,500،000</span> تومان</h2>
 
                     </div>
 
                     <button type="button" class="btn btn-success">سفارش</button>
                     <br />
-                    <br />
-                    <div class="col-md-12 text-right"><a href="@Url.Action("Works", "Home", new { s=2})">نمونه کار</a></div>
+                    
                 </div>
 
 
@@ -98,15 +104,14 @@
                     </ul>
 
                     <div class="price">
-                        <h2><span>1،000،000</span>تومان </h2>
+                        <h2>با ما تماس بگیرید</h2>
 
 
                     </div>
 
-                    <button type="button" class="btn btn-success">سفارش</button>
+                    <button type="button" class="btn btn-success">تماس با ما</button>
                     <br />
-                    <br />
-                    <div class="col-md-12 text-right"><a href="@Url.Action("Works", "Home", new { s=3})">نمونه کار</a></div>
+                  
 
                 </div>
 
@@ -114,6 +119,15 @@
 
         </div>
     </div>
+   
+</div>
+<div class="container-fluid row" id="Samples">
+  
+        <div class="col-lg-4 col-lg-offset-4 text-center">
+           
+            <a href="@Url.Action("WebsiteSample","Main")" class="btn btn-primary btn-lg btn-block">نمونه کارها</a>
+        </div>
+  
 </div>
 @section scripts{
     <script>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AttributeRouting.Web.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -40,6 +41,7 @@ namespace engineers_team.WEB.Controllers
         {
             return View();
         }
+        [Route("WebsiteDesign")]
         public ActionResult Website()
         {
             return View();
@@ -48,6 +50,11 @@ namespace engineers_team.WEB.Controllers
         {
             return View();
         }
+        public ActionResult WebsiteSample()
+        {
+            return View();
+        }
+
 
     }
 }
